@@ -1,81 +1,149 @@
 const db = require("../models");
-const Tutorial = db.tutorial;
-const Tag = db.tag;
+const Tags = db.tags;
+const Op = db.Sequelize.Op;
 
-exports.create = (tag) => {
-  return Tag.create({
-    name: tag.name,
-  })
-    .then((tag) => {
-      console.log(">> Created Tag: " + JSON.stringify(tag, null, 2));
-      return tag;
+//creating Tags and comments functions
+exports.create = (req, res) => {
+  // Validate request
+  if (!req.body.title) {
+    res.status(400).send({
+      message: "Content can not be empty!",
+    });
+    return;
+  }
+
+  // Create a Tag
+  const tag = {
+    title: req.body.title,
+    description: req.body.description,
+    published: req.body.published ? req.body.published : false,
+  };
+
+  // Save Tags in the database
+  Tags.create(tag)
+    .then((data) => {
+      res.send(data);
     })
     .catch((err) => {
-      console.log(">> Error while creating Tag: ", err);
-    });
-};
-
-exports.findAll = () => {
-  return Tag.findAll({
-    include: [
-      {
-        model: Tutorial,
-        as: "tutorials",
-        attributes: ["id", "title", "description"],
-        through: {
-          attributes: [],
-        },
-      },
-    ],
-  })
-    .then((tags) => {
-      return tags;
-    })
-    .catch((err) => {
-      console.log(">> Error while retrieving Tags: ", err);
-    });
-};
-
-exports.findById = (id) => {
-  return Tag.findByPk(id, {
-    include: [
-      {
-        model: Tutorial,
-        as: "tutorials",
-        attributes: ["id", "title", "description"],
-        through: {
-          attributes: [],
-        },
-      },
-    ],
-  })
-    .then((tag) => {
-      return tag;
-    })
-    .catch((err) => {
-      console.log(">> Error while finding Tag: ", err);
-    });
-};
-
-exports.addTutorial = (tagId, tutorialId) => {
-  return Tag.findByPk(tagId)
-    .then((tag) => {
-      if (!tag) {
-        console.log("Tag not found!");
-        return null;
-      }
-      return Tutorial.findByPk(tutorialId).then((tutorial) => {
-        if (!tutorial) {
-          console.log("Tutorial not found!");
-          return null;
-        }
-
-        tag.addTutorial(tutorial);
-        console.log(`>> added Tutorial id=${tutorial.id} to Tag id=${tag.id}`);
-        return tag;
+      res.status(500).send({
+        message: err.message || "Some error occurred while creating the Tag.",
       });
+    });
+};
+// Update an object
+// Update a Tags identified by the id in the request:
+exports.update = (req, res) => {
+  const id = req.params.id;
+
+  Tags.update(req.body, {
+    where: { id: id },
+  })
+    .then((num) => {
+      if (num == 1) {
+        res.send({
+          message: "Tags was updated successfully.",
+        });
+      } else {
+        res.send({
+          message: `Cannot update Tags with id=${id}. Maybe Tags was not found or req.body is empty!`,
+        });
+      }
     })
     .catch((err) => {
-      console.log(">> Error while adding Tutorial to Tag: ", err);
+      res.status(500).send({
+        message: "Error updating Tags with id=" + id,
+      });
+    });
+};
+
+//Retrieve a single object
+// Find a single Tags with an id:
+exports.findOne = (req, res) => {
+  const id = req.params.id;
+
+  Tags.findByPk(id)
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: "Error retrieving Tag with id=" + id,
+      });
+    });
+};
+
+// get all Tags include comments
+exports.findAll = (req, res) => {
+  const title = req.query.title;
+  var condition = title ? { title: { [Op.iLike]: `%${title}%` } } : null;
+
+  Tags.findAll({ where: condition })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while retrieving Tags.",
+      });
+    });
+};
+
+// Delete an object
+// Delete a Tags with the specified id:
+
+exports.delete = (req, res) => {
+  const id = req.params.id;
+
+  Tags.destroy({
+    where: { id: id },
+  })
+    .then((num) => {
+      if (num == 1) {
+        res.send({
+          message: "Tags was deleted successfully!",
+        });
+      } else {
+        res.send({
+          message: `Cannot delete Tags with id=${id}. Maybe Tags was not found!`,
+        });
+      }
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: "Could not delete Tags with id=" + id,
+      });
+    });
+};
+
+// Delete all objects
+// Delete all Tags from the database:
+
+exports.deleteAll = (req, res) => {
+  Tags.destroy({
+    where: {},
+    truncate: false,
+  })
+    .then((nums) => {
+      res.send({ message: `${nums} Tags were deleted successfully!` });
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while removing all Tags.",
+      });
+    });
+};
+
+// Find all objects by condition
+// Find all Tags with published = true:
+
+exports.findAllPublished = (req, res) => {
+  Tags.findAll({ where: { published: true } })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while retrieving Tags.",
+      });
     });
 };

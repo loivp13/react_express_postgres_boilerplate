@@ -1,10 +1,10 @@
-module.exports = (sequelize) => {
+module.exports = (sequelize, Sequelize) => {
   const Comment = sequelize.define("comment", {
     name: {
-      type: sequelize.STRING,
+      type: Sequelize.STRING,
     },
     text: {
-      type: sequelize.STRING,
+      type: Sequelize.STRING,
     },
   });
 

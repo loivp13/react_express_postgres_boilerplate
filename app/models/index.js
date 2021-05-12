@@ -20,25 +20,25 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.tutorial = require("./tutorial.model")(sequelize, Sequelize);
-db.comment = require("./tutorial.model")(sequelize, Sequelize);
-db.tag = require("./tag.model")(sequelize, Sequelize);
+db.tutorials = require("./tutorial.model")(sequelize, Sequelize);
+db.comments = require("./comment.model")(sequelize, Sequelize);
+db.tags = require("./tag.model")(sequelize, Sequelize);
 
 //make tutorial model to have a one to many relationship with comment
-db.tutorial.hasMany(db.comment, { as: "comments" });
+db.tutorials.hasMany(db.comments, { as: "comments" });
 //make tutorial to have many to many relationship with tags
-db.tutorial.belongsToMany(db.tag, {
+db.tutorials.belongsToMany(db.tags, {
   through: "tutorial_tag",
   as: "tags",
   foreignKey: "tag_id",
 });
 //make comment to belong to only one tutorial
-db.comment.belongsTo(db.tutorial, {
+db.comments.belongsTo(db.tutorials, {
   foreignKey: "tutorialId",
-  as: "tutorial",
+  as: "comments",
 });
 //make tag to have many to many relationship with tags
-db.tag.belongsToMany(db.tutorial, {
+db.tags.belongsToMany(db.tutorials, {
   through: "tutorial_tag",
   as: "tags",
   foreignKey: "tutorial_id",
