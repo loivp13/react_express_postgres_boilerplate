@@ -23,14 +23,24 @@ db.sequelize.sync({ force: true }).then(() => {
   console.log("drop and re-sync db");
 });
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
-});
-require("./app/routes/tutorial.routes")(app);
+// get all routes
+let ApiTutorialRoutes = require("./app/routes/tutorial.routes");
+let IndexRoutes = require("./app/routes/index.routes");
+// index routes
+app.use("/", IndexRoutes);
+// tutorial routes
+app.use("/api/tutorials", ApiTutorialRoutes);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}.`);
+  try {
+    await db.sequelize.authenticate();
+    console.log(
+      "---------Connection with Postgres has been established successfully.------"
+    );
+  } catch (error) {
+    console.error("Unable to connect to the database:", error);
+  }
 });

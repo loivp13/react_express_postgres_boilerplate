@@ -75,6 +75,7 @@ exports.findOne = (req, res) => {
 
 // get all tutorials include comments
 exports.findAll = (req, res) => {
+  console.log(Op.iLike);
   const title = req.query.title;
   var condition = title ? { title: { [Op.iLike]: `%${title}%` } } : null;
 
