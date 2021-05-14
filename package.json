@@ -1,7 +1,14 @@
 {
   "name": "nodejs-express-sequelize-postgresql",
   "version": "1.0.0",
-  "description": "Node.js Rest apis with Express, Sequelize & PostgreSQL",
+  "description": "A broilerplate for Nodejs,Postgres, and React",
+  "contributors": [
+    {
+      "name": "Loi Van Pham",
+      "img": "https://media-exp1.licdn.com/dms/image/C5603AQEdcwsWFFk01g/profile-displayphoto-shrink_200_200/0/1620352872837?e=1626307200&v=beta&t=lv5YVYtsBcAnhoqTsUGPuy8AjhPK4Y9toZZwPWKSl8Y",
+      "url": "https://www.linkedin.com/in/loivp13/"
+    }
+  ],
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,6 +32,7 @@
     "sequelize": "^6.6.2"
   },
   "devDependencies": {
+    "@appnest/readme": "^1.2.7",
     "nodemon": "^2.0.7"
   }
 }
