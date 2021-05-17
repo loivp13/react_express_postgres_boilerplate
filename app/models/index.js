@@ -16,11 +16,13 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   logging: false,
 });
 
+//created db object
 const db = {};
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
+db.users = require("./user.model")(sequelize, Sequelize);
 db.tutorials = require("./tutorial.model")(sequelize, Sequelize);
 db.comments = require("./comment.model")(sequelize, Sequelize);
 db.tags = require("./tag.model")(sequelize, Sequelize);
