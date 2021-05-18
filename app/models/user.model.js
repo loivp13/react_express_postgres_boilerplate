@@ -35,7 +35,9 @@ module.exports = (sequelize, Sequelize) => {
       username: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
+        unique: {
+          msg: "Username is already taken",
+        },
         validate: {
           len: {
             args: [6],
@@ -56,7 +58,9 @@ module.exports = (sequelize, Sequelize) => {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
+        unique: {
+          msg: "This email has already registered.",
+        },
         validate: {
           isEmail: {
             msg: "Email format is incorrect.",
