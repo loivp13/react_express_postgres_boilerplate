@@ -18,8 +18,6 @@ exports.create = (req, res) => {
     lastName: req.body.lastName,
     username: req.body.username,
     password: req.body.password,
-    uniqueOne: req.body.uniqueOne,
-    uniqueTwo: req.body.uniqueTwo,
     email: req.body.email,
   };
 

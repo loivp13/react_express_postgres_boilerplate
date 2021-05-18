@@ -1,9 +1,7 @@
-const users = require("../controllers/user.controller.js");
-
 var router = require("express").Router();
 
-// Create a new Tutorial
-router.post("/", users.create);
+//importing controllers
+const users = require("../controllers/user.controller.js");
 
 // Retrieve all users
 router.get("/", users.findAll);

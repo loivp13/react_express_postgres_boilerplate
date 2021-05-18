@@ -15,21 +15,53 @@ module.exports = (sequelize, Sequelize) => {
       firstName: {
         type: Sequelize.STRING,
         allowNull: false,
+        validate: {
+          len: {
+            args: [1],
+            msg: "First name is required.",
+          },
+        },
       },
       lastName: {
         type: Sequelize.STRING,
+        allowNull: false,
+        validate: {
+          len: {
+            args: [1],
+            msg: "Last name is required.",
+          },
+        },
       },
       username: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
+        validate: {
+          len: {
+            args: [6],
+            msg: "Username needs a minimum of 6 characters.",
+          },
+        },
       },
       password: {
         type: Sequelize.STRING,
         allowNull: false,
+        validate: {
+          len: {
+            args: [6],
+            msg: "Password needs a minimum of 6 characters.",
+          },
+        },
       },
       email: {
         type: Sequelize.STRING,
         allowNull: false,
+        unique: true,
+        validate: {
+          isEmail: {
+            msg: "Email format is incorrect.",
+          },
+        },
       },
     },
     {

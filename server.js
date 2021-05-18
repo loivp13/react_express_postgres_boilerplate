@@ -24,14 +24,13 @@ db.sequelize.sync({ force: true }).then(() => {
 });
 
 // get all routes
-let ApiTutorialRoutes = require("./app/routes/tutorial.routes");
+let AuthRoutes = require("./app/routes/auth.routes");
 let IndexRoutes = require("./app/routes/index.routes");
+let TutorialRoutes = require("./app/routes/tutorial.routes");
 let UserRoutes = require("./app/routes/user.routes");
-// index routes
 app.use("/", IndexRoutes);
-// tutorial routes
-app.use("/api/tutorials", ApiTutorialRoutes);
-// user routes
+app.use("/api/auth", AuthRoutes);
+app.use("/api/tutorials", TutorialRoutes);
 app.use("/api/users", UserRoutes);
 
 // set port, listen for requests
