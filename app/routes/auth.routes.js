@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
 router.post("/", userRegisterValidator, runValidation, register);
 
 //activate user
-router.post("/activate/", activate);
+router.post("/activate", activate);
 
 //user login
 router.post("/login", userLoginValidator, runValidation, login);

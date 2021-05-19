@@ -18,9 +18,20 @@ app.use(express.json());
 //sync db; enables Sequelize to automatically create the table according model definition
 //options: force  - can force table to drop and resync
 const db = require("./app/models");
+let dbOptions = {};
+if (process.env.ENVIRONMENT === "DEVELOPMENT") {
+  dbOptions.force = true;
+} else {
+  dbOptions.force = false;
+}
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync(dbOptions).then(() => {
   console.log("drop and re-sync db");
+  //Seed db if in developemnt
+  if (process.env.ENVIRONMENT === "DEVELOPMENT") {
+    const dbSeed = require("./app/helpers/dbSeed");
+    dbSeed();
+  }
 });
 
 // get all routes

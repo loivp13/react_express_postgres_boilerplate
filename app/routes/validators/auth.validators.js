@@ -5,6 +5,9 @@ exports.userRegisterValidator = [
   check("email").isEmail().withMessage("Must be a valid email address"),
   check("lastName").not().isEmpty().withMessage("Last name is required"),
   check("username").not().isEmpty().withMessage("Username is required"),
+  check("username")
+    .isLength({ min: 6 })
+    .withMessage("Username must be at least 6 characters long"),
   check("password")
     .isLength({ min: 6 })
     .withMessage("Password must be at least 6 characters long"),

@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt");
+const { saltRounds } = require("../config/db.config");
 module.exports = (sequelize, Sequelize) => {
   //create columns with ids
   // ***NOTE*** createdAt, updatedAt are generated automatically
@@ -72,29 +73,24 @@ module.exports = (sequelize, Sequelize) => {
       hooks: {
         beforeCreate: async (user) => {
           if (user.password) {
-            const salt = await bcrypt.genSaltSync(10, "a");
-            user.password = bcrypt.hashSync(user.password, salt);
+            const salt = await bcrypt.genSalt(saltRounds, "a");
+            user.password = await bcrypt.hash(user.password, salt);
           }
         },
         beforeUpdate: async (user) => {
           if (user.password) {
-            const salt = await bcrypt.genSaltSync(10, "a");
-            user.password = bcrypt.hashSync(user.password, salt);
+            const salt = await bcrypt.genSalt(10, "a");
+            user.password = await bcrypt.hash(user.password, salt);
           }
-        },
-      },
-      instanceMethods: {
-        validPassword: {
-          validPassword: (password) => {
-            return bcrypt.compareSync(password, this.password);
-          },
         },
       },
     }
   );
 
-  User.prototype.validPassword = async (password, hash) => {
-    return await bcrypt.compareSync(password, hash);
+  User.prototype.validatePassword = async function (password) {
+    console.log(this.password);
+    console.log(password);
+    return await bcrypt.compare(password, this.password);
   };
 
   return User;
