@@ -1,23 +1,48 @@
 const db = require("../models");
+const Op = db.Sequelize.Op;
 const User = db.users;
 const jwt = require("jsonwebtoken");
 const expressJwt = require("express-jwt");
+const mailTransporter = require("../nodemailer/transporter");
 
 exports.register = (req, res) => {
   const { firstName, lastName, username, password, email } = req.body;
+  User.findOne({
+    where: {
+      [Op.or]: [{ email }, { username }],
+    },
+  }).then((data) => {
+    //if data exist email or username is taking
+    if (data) {
+      console.log(data);
+      res.status(400).json({
+        message: "email or password is already taken",
+      });
+    }
 
-  User.create({ firstName, lastName, username, password, email })
-    .then((data) => {
-      res.send(data);
-    })
-    .catch((err) => {
-      if (err)
-        res.status(500).send({
-          message:
-            err.errors[0].message ||
-            "An error occured while creating account, please try again",
+    //if data does not exist send double optin email
+    const token = jwt.sign(
+      { firstName, lastName, username, password, email },
+      process.env.JWT_ACCOUNT_ACTIVATION
+    );
+    let mailOptions = {
+      from: "app@gmail.com",
+      to: email,
+      subject: "Confirmation email for app",
+      text: `localhost:8000/api/auth/activate/${token}`,
+    };
+    mailTransporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        res.json({
+          message: error,
         });
+      } else {
+        res.json({
+          message: `Email sent:${info.response}`,
+        });
+      }
     });
+  });
 };
 
 exports.login = (req, res) => {
@@ -54,3 +79,7 @@ exports.requireSignin = expressJwt({
   secret: process.env.JWT_SECRET,
   algorithms: ["sha1", "RS256", "HS256"],
 });
+
+exports.activate = (req, res) => {};
+
+exports.forgotPassword = (req, res) => {};
