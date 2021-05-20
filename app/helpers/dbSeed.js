@@ -27,4 +27,17 @@ module.exports = function () {
     .catch((err) => {
       console.log(err);
     });
+  User.create({
+    username: "wevdev",
+    firstName: "wev",
+    lastName: "dev",
+    email: "lvpwevdev@gmail.com",
+    password: "Wev123456",
+  })
+    .then((data) => {
+      console.log("created wev successful");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };

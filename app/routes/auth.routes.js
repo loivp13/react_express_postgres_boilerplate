@@ -1,7 +1,7 @@
 let router = require("express").Router();
 //importing controllers
 const auth = require("../controllers/auth.controller");
-const { register, login, forgotPassword, activate } = auth;
+const { register, login, forgotPassword, activate, resetPassword } = auth;
 
 //import validator
 const validators = require("./validators/auth.validators");
@@ -29,11 +29,18 @@ router.post("/activate", activate);
 router.post("/login", userLoginValidator, runValidation, login);
 
 //User forgot pw
-router.put(
+router.post(
   "/forgot-password",
   userForgotPasswordValidator,
   runValidation,
   forgotPassword
+);
+
+router.put(
+  "/reset-password",
+  userResetPasswordValidator,
+  runValidation,
+  resetPassword
 );
 
 module.exports = router;

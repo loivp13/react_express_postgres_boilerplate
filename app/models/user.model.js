@@ -68,6 +68,18 @@ module.exports = (sequelize, Sequelize) => {
           },
         },
       },
+      resetToken: {
+        type: Sequelize.STRING,
+      },
+      fullName: {
+        type: Sequelize.VIRTUAL,
+        get() {
+          return `${this.firstName}${this.lastName}`;
+        },
+        set(val) {
+          throw new Error("This is a virtual field!");
+        },
+      },
     },
     {
       hooks: {
@@ -79,7 +91,7 @@ module.exports = (sequelize, Sequelize) => {
         },
         beforeUpdate: async (user) => {
           if (user.password) {
-            const salt = await bcrypt.genSalt(10, "a");
+            const salt = await bcrypt.genSalt(saltRounds, "a");
             user.password = await bcrypt.hash(user.password, salt);
           }
         },

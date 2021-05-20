@@ -148,6 +148,93 @@ exports.requireSignin = expressJwt({
 });
 
 exports.forgotPassword = (req, res) => {
-  const { password, email } = req.body;
-  User.findOne({ where: { email } });
+  const { email } = req.body;
+
+  User.findOne({ where: { email } })
+    .then((data) => {
+      //no user found
+      if (!data) {
+        res.status(400).json({
+          message: "We could not verify your email. Please try again",
+        });
+      }
+      //found user
+      console.log(data.fullName);
+      const token = jwt.sign(
+        { name: data.fullName },
+        process.env.JWT_RESET_PASSWORD,
+        {
+          expiresIn: "10min",
+        }
+      );
+      User.update({ resetToken: token }, { where: { email } })
+        .then((data) => {
+          const sendEmail = ses
+            .sendEmail(forgotEmailPasswordParams(email, token))
+            .promise();
+
+          sendEmail
+            .then((data) => {
+              return res.json({
+                message: `Email has been sent to ${email}. Please follow the email's instructions to reset your password. The link will expire in 10 minutes.`,
+              });
+            })
+            .catch((error) => {
+              res.json({
+                message: "An error was detected, please try again",
+                error: error,
+              });
+            });
+        })
+        .catch((err) => {
+          res.status(400).json({
+            message: "Unable to reset your password, please try again.",
+            err: err,
+          });
+        });
+    })
+    .catch((err) => {
+      res.status(400).json({
+        message:
+          "Unable to reset your password at this time. Please try again.",
+        err,
+      });
+    });
+};
+
+exports.resetPassword = (req, res) => {
+  const { newPassword, token } = req.body;
+  User.findOne({ where: { resetToken: token } })
+    .then((data) => {
+      if (!data) {
+        return res.status(400).json({
+          message: "Resetting password failed. Please try again",
+        });
+      }
+      data
+        .update(
+          {
+            password: newPassword,
+          },
+          { where: { resetToken: token } }
+        )
+        .then((data) => {
+          res.status(200).json({
+            message: "Password successfully reset",
+          });
+        })
+        .catch((err) => {
+          res.status(400).json({
+            message:
+              "An error occured while resetting password. Please try again.",
+            err,
+          });
+        });
+    })
+    .catch((err) => {
+      res.status(400).json({
+        message: "An error occured while resetting password. Please try again",
+        err,
+      });
+    });
 };
