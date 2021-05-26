@@ -1,4 +1,4 @@
-<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">nodejs-express-sequelize-postgresql</h1>
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><h1 align="center">nodejs-express-sequelize-postgresql-react</h1>
 
 <p align="center">
   <b>A broilerplate for Nodejs, Sequelize, and React with extra features such as Tailwindcss, AWS SES, JWT and more.</b></br>
