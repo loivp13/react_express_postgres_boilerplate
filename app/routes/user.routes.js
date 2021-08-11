@@ -4,7 +4,7 @@ var router = require("express").Router();
 const users = require("../controllers/user.controller.js");
 
 // Retrieve all users
-router.get("/", users.findAll);
+// router.get("/", users.findAll);
 
 // Retrieve all published users
 router.get("/published", users.findAllPublished);
