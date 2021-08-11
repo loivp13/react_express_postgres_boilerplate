@@ -12,7 +12,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --ignore ./client/ --trace-warnings server.js"
+    "dev": "nodemon --ignore ./client/ --trace-warnings server.js",
+    "generateMD": "npx @appnest/readme generate"
   },
   "keywords": [
     "nodejs",
