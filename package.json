@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-express-sequelize-postgresql",
+  "name": "nodejs-express-sequelize-postgresql-react",
   "version": "1.0.0",
-  "description": "A broilerplate for Nodejs,Postgres, and React",
+  "description": "A broilerplate for Nodejs, Sequelize, and React with extra features such as Tailwindcss, AWS SES, JWT and more.",
   "contributors": [
     {
       "name": "Loi Van Pham",
@@ -21,7 +21,10 @@
     "sequelize",
     "postgresql",
     "rest",
-    "api"
+    "api",
+    "jwt",
+    "nodemon",
+    "SES"
   ],
   "author": "masterveloute",
   "license": "ISC",
