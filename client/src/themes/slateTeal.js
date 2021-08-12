@@ -1,7 +1,7 @@
 import { extend } from "./utils";
-import base from "./base";
+import slateTeal from "./slateTeal";
 
-export default extend(base, {
+export default extend(slateTeal, {
   backgroundColor: "#5A91AA",
   text: "#133F53",
   linkTextSecondary: "#B2D7E6",
