@@ -1489,8 +1489,28 @@ video {
   --tw-divide-x-reverse: 1;
 }
 
-.divide-background > :not([hidden]) ~ :not([hidden]) {
-  border-color: var(--backgroundColor);
+.divide-th-background > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--th-background);
+}
+
+.divide-th-text > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--th-text);
+}
+
+.divide-th-linkText > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--th-linkText);
+}
+
+.divide-th-linkTextSecondary > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--th-linkTextSecondary);
+}
+
+.divide-th-popUp > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--th-popUp);
+}
+
+.divide-th-error > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--th-error);
 }
 
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -1676,24 +1696,124 @@ video {
           background-clip: text;
 }
 
-.bg-background {
-  background-color: var(--backgroundColor);
+.bg-th-background {
+  background-color: var(--th-background);
 }
 
-.group:hover .group-hover\:bg-background {
-  background-color: var(--backgroundColor);
+.bg-th-text {
+  background-color: var(--th-text);
 }
 
-.focus-within\:bg-background:focus-within {
-  background-color: var(--backgroundColor);
+.bg-th-linkText {
+  background-color: var(--th-linkText);
 }
 
-.hover\:bg-background:hover {
-  background-color: var(--backgroundColor);
+.bg-th-linkTextSecondary {
+  background-color: var(--th-linkTextSecondary);
 }
 
-.focus\:bg-background:focus {
-  background-color: var(--backgroundColor);
+.bg-th-popUp {
+  background-color: var(--th-popUp);
+}
+
+.bg-th-error {
+  background-color: var(--th-error);
+}
+
+.group:hover .group-hover\:bg-th-background {
+  background-color: var(--th-background);
+}
+
+.group:hover .group-hover\:bg-th-text {
+  background-color: var(--th-text);
+}
+
+.group:hover .group-hover\:bg-th-linkText {
+  background-color: var(--th-linkText);
+}
+
+.group:hover .group-hover\:bg-th-linkTextSecondary {
+  background-color: var(--th-linkTextSecondary);
+}
+
+.group:hover .group-hover\:bg-th-popUp {
+  background-color: var(--th-popUp);
+}
+
+.group:hover .group-hover\:bg-th-error {
+  background-color: var(--th-error);
+}
+
+.focus-within\:bg-th-background:focus-within {
+  background-color: var(--th-background);
+}
+
+.focus-within\:bg-th-text:focus-within {
+  background-color: var(--th-text);
+}
+
+.focus-within\:bg-th-linkText:focus-within {
+  background-color: var(--th-linkText);
+}
+
+.focus-within\:bg-th-linkTextSecondary:focus-within {
+  background-color: var(--th-linkTextSecondary);
+}
+
+.focus-within\:bg-th-popUp:focus-within {
+  background-color: var(--th-popUp);
+}
+
+.focus-within\:bg-th-error:focus-within {
+  background-color: var(--th-error);
+}
+
+.hover\:bg-th-background:hover {
+  background-color: var(--th-background);
+}
+
+.hover\:bg-th-text:hover {
+  background-color: var(--th-text);
+}
+
+.hover\:bg-th-linkText:hover {
+  background-color: var(--th-linkText);
+}
+
+.hover\:bg-th-linkTextSecondary:hover {
+  background-color: var(--th-linkTextSecondary);
+}
+
+.hover\:bg-th-popUp:hover {
+  background-color: var(--th-popUp);
+}
+
+.hover\:bg-th-error:hover {
+  background-color: var(--th-error);
+}
+
+.focus\:bg-th-background:focus {
+  background-color: var(--th-background);
+}
+
+.focus\:bg-th-text:focus {
+  background-color: var(--th-text);
+}
+
+.focus\:bg-th-linkText:focus {
+  background-color: var(--th-linkText);
+}
+
+.focus\:bg-th-linkTextSecondary:focus {
+  background-color: var(--th-linkTextSecondary);
+}
+
+.focus\:bg-th-popUp:focus {
+  background-color: var(--th-popUp);
+}
+
+.focus\:bg-th-error:focus {
+  background-color: var(--th-error);
 }
 
 .bg-none {
@@ -1732,43 +1852,238 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
-.from-background {
-  --tw-gradient-from: var(--backgroundColor);
+.from-th-background {
+  --tw-gradient-from: var(--th-background);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
-.via-background {
-  --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-}
-
-.to-background {
-  --tw-gradient-to: var(--backgroundColor);
-}
-
-.hover\:from-background:hover {
-  --tw-gradient-from: var(--backgroundColor);
+.from-th-text {
+  --tw-gradient-from: var(--th-text);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
-.hover\:via-background:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-}
-
-.hover\:to-background:hover {
-  --tw-gradient-to: var(--backgroundColor);
-}
-
-.focus\:from-background:focus {
-  --tw-gradient-from: var(--backgroundColor);
+.from-th-linkText {
+  --tw-gradient-from: var(--th-linkText);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
-.focus\:via-background:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.from-th-linkTextSecondary {
+  --tw-gradient-from: var(--th-linkTextSecondary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
-.focus\:to-background:focus {
-  --tw-gradient-to: var(--backgroundColor);
+.from-th-popUp {
+  --tw-gradient-from: var(--th-popUp);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-th-error {
+  --tw-gradient-from: var(--th-error);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-th-background {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-th-text {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-th-linkText {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-th-linkTextSecondary {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-th-popUp {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.via-th-error {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.to-th-background {
+  --tw-gradient-to: var(--th-background);
+}
+
+.to-th-text {
+  --tw-gradient-to: var(--th-text);
+}
+
+.to-th-linkText {
+  --tw-gradient-to: var(--th-linkText);
+}
+
+.to-th-linkTextSecondary {
+  --tw-gradient-to: var(--th-linkTextSecondary);
+}
+
+.to-th-popUp {
+  --tw-gradient-to: var(--th-popUp);
+}
+
+.to-th-error {
+  --tw-gradient-to: var(--th-error);
+}
+
+.hover\:from-th-background:hover {
+  --tw-gradient-from: var(--th-background);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-th-text:hover {
+  --tw-gradient-from: var(--th-text);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-th-linkText:hover {
+  --tw-gradient-from: var(--th-linkText);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-th-linkTextSecondary:hover {
+  --tw-gradient-from: var(--th-linkTextSecondary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-th-popUp:hover {
+  --tw-gradient-from: var(--th-popUp);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-th-error:hover {
+  --tw-gradient-from: var(--th-error);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-th-background:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-th-text:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-th-linkText:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-th-linkTextSecondary:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-th-popUp:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:via-th-error:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.hover\:to-th-background:hover {
+  --tw-gradient-to: var(--th-background);
+}
+
+.hover\:to-th-text:hover {
+  --tw-gradient-to: var(--th-text);
+}
+
+.hover\:to-th-linkText:hover {
+  --tw-gradient-to: var(--th-linkText);
+}
+
+.hover\:to-th-linkTextSecondary:hover {
+  --tw-gradient-to: var(--th-linkTextSecondary);
+}
+
+.hover\:to-th-popUp:hover {
+  --tw-gradient-to: var(--th-popUp);
+}
+
+.hover\:to-th-error:hover {
+  --tw-gradient-to: var(--th-error);
+}
+
+.focus\:from-th-background:focus {
+  --tw-gradient-from: var(--th-background);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-th-text:focus {
+  --tw-gradient-from: var(--th-text);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-th-linkText:focus {
+  --tw-gradient-from: var(--th-linkText);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-th-linkTextSecondary:focus {
+  --tw-gradient-from: var(--th-linkTextSecondary);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-th-popUp:focus {
+  --tw-gradient-from: var(--th-popUp);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-th-error:focus {
+  --tw-gradient-from: var(--th-error);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-th-background:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-th-text:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-th-linkText:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-th-linkTextSecondary:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-th-popUp:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:via-th-error:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.focus\:to-th-background:focus {
+  --tw-gradient-to: var(--th-background);
+}
+
+.focus\:to-th-text:focus {
+  --tw-gradient-to: var(--th-text);
+}
+
+.focus\:to-th-linkText:focus {
+  --tw-gradient-to: var(--th-linkText);
+}
+
+.focus\:to-th-linkTextSecondary:focus {
+  --tw-gradient-to: var(--th-linkTextSecondary);
+}
+
+.focus\:to-th-popUp:focus {
+  --tw-gradient-to: var(--th-popUp);
+}
+
+.focus\:to-th-error:focus {
+  --tw-gradient-to: var(--th-error);
 }
 
 .bg-opacity-0 {
@@ -2151,24 +2466,124 @@ video {
   border-collapse: separate;
 }
 
-.border-background {
-  border-color: var(--backgroundColor);
+.border-th-background {
+  border-color: var(--th-background);
 }
 
-.group:hover .group-hover\:border-background {
-  border-color: var(--backgroundColor);
+.border-th-text {
+  border-color: var(--th-text);
 }
 
-.focus-within\:border-background:focus-within {
-  border-color: var(--backgroundColor);
+.border-th-linkText {
+  border-color: var(--th-linkText);
 }
 
-.hover\:border-background:hover {
-  border-color: var(--backgroundColor);
+.border-th-linkTextSecondary {
+  border-color: var(--th-linkTextSecondary);
 }
 
-.focus\:border-background:focus {
-  border-color: var(--backgroundColor);
+.border-th-popUp {
+  border-color: var(--th-popUp);
+}
+
+.border-th-error {
+  border-color: var(--th-error);
+}
+
+.group:hover .group-hover\:border-th-background {
+  border-color: var(--th-background);
+}
+
+.group:hover .group-hover\:border-th-text {
+  border-color: var(--th-text);
+}
+
+.group:hover .group-hover\:border-th-linkText {
+  border-color: var(--th-linkText);
+}
+
+.group:hover .group-hover\:border-th-linkTextSecondary {
+  border-color: var(--th-linkTextSecondary);
+}
+
+.group:hover .group-hover\:border-th-popUp {
+  border-color: var(--th-popUp);
+}
+
+.group:hover .group-hover\:border-th-error {
+  border-color: var(--th-error);
+}
+
+.focus-within\:border-th-background:focus-within {
+  border-color: var(--th-background);
+}
+
+.focus-within\:border-th-text:focus-within {
+  border-color: var(--th-text);
+}
+
+.focus-within\:border-th-linkText:focus-within {
+  border-color: var(--th-linkText);
+}
+
+.focus-within\:border-th-linkTextSecondary:focus-within {
+  border-color: var(--th-linkTextSecondary);
+}
+
+.focus-within\:border-th-popUp:focus-within {
+  border-color: var(--th-popUp);
+}
+
+.focus-within\:border-th-error:focus-within {
+  border-color: var(--th-error);
+}
+
+.hover\:border-th-background:hover {
+  border-color: var(--th-background);
+}
+
+.hover\:border-th-text:hover {
+  border-color: var(--th-text);
+}
+
+.hover\:border-th-linkText:hover {
+  border-color: var(--th-linkText);
+}
+
+.hover\:border-th-linkTextSecondary:hover {
+  border-color: var(--th-linkTextSecondary);
+}
+
+.hover\:border-th-popUp:hover {
+  border-color: var(--th-popUp);
+}
+
+.hover\:border-th-error:hover {
+  border-color: var(--th-error);
+}
+
+.focus\:border-th-background:focus {
+  border-color: var(--th-background);
+}
+
+.focus\:border-th-text:focus {
+  border-color: var(--th-text);
+}
+
+.focus\:border-th-linkText:focus {
+  border-color: var(--th-linkText);
+}
+
+.focus\:border-th-linkTextSecondary:focus {
+  border-color: var(--th-linkTextSecondary);
+}
+
+.focus\:border-th-popUp:focus {
+  border-color: var(--th-popUp);
+}
+
+.focus\:border-th-error:focus {
+  border-color: var(--th-error);
 }
 
 .border-opacity-0 {
@@ -7751,12 +8166,52 @@ video {
   padding-left: 0.875rem;
 }
 
-.placeholder-background::placeholder {
-  color: var(--backgroundColor);
+.placeholder-th-background::placeholder {
+  color: var(--th-background);
 }
 
-.focus\:placeholder-background:focus::placeholder {
-  color: var(--backgroundColor);
+.placeholder-th-text::placeholder {
+  color: var(--th-text);
+}
+
+.placeholder-th-linkText::placeholder {
+  color: var(--th-linkText);
+}
+
+.placeholder-th-linkTextSecondary::placeholder {
+  color: var(--th-linkTextSecondary);
+}
+
+.placeholder-th-popUp::placeholder {
+  color: var(--th-popUp);
+}
+
+.placeholder-th-error::placeholder {
+  color: var(--th-error);
+}
+
+.focus\:placeholder-th-background:focus::placeholder {
+  color: var(--th-background);
+}
+
+.focus\:placeholder-th-text:focus::placeholder {
+  color: var(--th-text);
+}
+
+.focus\:placeholder-th-linkText:focus::placeholder {
+  color: var(--th-linkText);
+}
+
+.focus\:placeholder-th-linkTextSecondary:focus::placeholder {
+  color: var(--th-linkTextSecondary);
+}
+
+.focus\:placeholder-th-popUp:focus::placeholder {
+  color: var(--th-popUp);
+}
+
+.focus\:placeholder-th-error:focus::placeholder {
+  color: var(--th-error);
 }
 
 .placeholder-opacity-0::placeholder {
@@ -11061,16 +11516,76 @@ video {
   --tw-ring-inset: inset;
 }
 
-.ring-offset-background {
-  --tw-ring-offset-color: var(--backgroundColor);
+.ring-offset-th-background {
+  --tw-ring-offset-color: var(--th-background);
 }
 
-.focus-within\:ring-offset-background:focus-within {
-  --tw-ring-offset-color: var(--backgroundColor);
+.ring-offset-th-text {
+  --tw-ring-offset-color: var(--th-text);
 }
 
-.focus\:ring-offset-background:focus {
-  --tw-ring-offset-color: var(--backgroundColor);
+.ring-offset-th-linkText {
+  --tw-ring-offset-color: var(--th-linkText);
+}
+
+.ring-offset-th-linkTextSecondary {
+  --tw-ring-offset-color: var(--th-linkTextSecondary);
+}
+
+.ring-offset-th-popUp {
+  --tw-ring-offset-color: var(--th-popUp);
+}
+
+.ring-offset-th-error {
+  --tw-ring-offset-color: var(--th-error);
+}
+
+.focus-within\:ring-offset-th-background:focus-within {
+  --tw-ring-offset-color: var(--th-background);
+}
+
+.focus-within\:ring-offset-th-text:focus-within {
+  --tw-ring-offset-color: var(--th-text);
+}
+
+.focus-within\:ring-offset-th-linkText:focus-within {
+  --tw-ring-offset-color: var(--th-linkText);
+}
+
+.focus-within\:ring-offset-th-linkTextSecondary:focus-within {
+  --tw-ring-offset-color: var(--th-linkTextSecondary);
+}
+
+.focus-within\:ring-offset-th-popUp:focus-within {
+  --tw-ring-offset-color: var(--th-popUp);
+}
+
+.focus-within\:ring-offset-th-error:focus-within {
+  --tw-ring-offset-color: var(--th-error);
+}
+
+.focus\:ring-offset-th-background:focus {
+  --tw-ring-offset-color: var(--th-background);
+}
+
+.focus\:ring-offset-th-text:focus {
+  --tw-ring-offset-color: var(--th-text);
+}
+
+.focus\:ring-offset-th-linkText:focus {
+  --tw-ring-offset-color: var(--th-linkText);
+}
+
+.focus\:ring-offset-th-linkTextSecondary:focus {
+  --tw-ring-offset-color: var(--th-linkTextSecondary);
+}
+
+.focus\:ring-offset-th-popUp:focus {
+  --tw-ring-offset-color: var(--th-popUp);
+}
+
+.focus\:ring-offset-th-error:focus {
+  --tw-ring-offset-color: var(--th-error);
 }
 
 .ring-offset-0 {
@@ -11133,16 +11648,76 @@ video {
   --tw-ring-offset-width: 8px;
 }
 
-.ring-background {
-  --tw-ring-color: var(--backgroundColor);
+.ring-th-background {
+  --tw-ring-color: var(--th-background);
 }
 
-.focus-within\:ring-background:focus-within {
-  --tw-ring-color: var(--backgroundColor);
+.ring-th-text {
+  --tw-ring-color: var(--th-text);
 }
 
-.focus\:ring-background:focus {
-  --tw-ring-color: var(--backgroundColor);
+.ring-th-linkText {
+  --tw-ring-color: var(--th-linkText);
+}
+
+.ring-th-linkTextSecondary {
+  --tw-ring-color: var(--th-linkTextSecondary);
+}
+
+.ring-th-popUp {
+  --tw-ring-color: var(--th-popUp);
+}
+
+.ring-th-error {
+  --tw-ring-color: var(--th-error);
+}
+
+.focus-within\:ring-th-background:focus-within {
+  --tw-ring-color: var(--th-background);
+}
+
+.focus-within\:ring-th-text:focus-within {
+  --tw-ring-color: var(--th-text);
+}
+
+.focus-within\:ring-th-linkText:focus-within {
+  --tw-ring-color: var(--th-linkText);
+}
+
+.focus-within\:ring-th-linkTextSecondary:focus-within {
+  --tw-ring-color: var(--th-linkTextSecondary);
+}
+
+.focus-within\:ring-th-popUp:focus-within {
+  --tw-ring-color: var(--th-popUp);
+}
+
+.focus-within\:ring-th-error:focus-within {
+  --tw-ring-color: var(--th-error);
+}
+
+.focus\:ring-th-background:focus {
+  --tw-ring-color: var(--th-background);
+}
+
+.focus\:ring-th-text:focus {
+  --tw-ring-color: var(--th-text);
+}
+
+.focus\:ring-th-linkText:focus {
+  --tw-ring-color: var(--th-linkText);
+}
+
+.focus\:ring-th-linkTextSecondary:focus {
+  --tw-ring-color: var(--th-linkTextSecondary);
+}
+
+.focus\:ring-th-popUp:focus {
+  --tw-ring-color: var(--th-popUp);
+}
+
+.focus\:ring-th-error:focus {
+  --tw-ring-color: var(--th-error);
 }
 
 .ring-opacity-0 {
@@ -11369,24 +11944,124 @@ video {
   text-align: justify;
 }
 
-.text-background {
-  color: var(--backgroundColor);
+.text-th-background {
+  color: var(--th-background);
 }
 
-.group:hover .group-hover\:text-background {
-  color: var(--backgroundColor);
+.text-th-text {
+  color: var(--th-text);
 }
 
-.focus-within\:text-background:focus-within {
-  color: var(--backgroundColor);
+.text-th-linkText {
+  color: var(--th-linkText);
 }
 
-.hover\:text-background:hover {
-  color: var(--backgroundColor);
+.text-th-linkTextSecondary {
+  color: var(--th-linkTextSecondary);
 }
 
-.focus\:text-background:focus {
-  color: var(--backgroundColor);
+.text-th-popUp {
+  color: var(--th-popUp);
+}
+
+.text-th-error {
+  color: var(--th-error);
+}
+
+.group:hover .group-hover\:text-th-background {
+  color: var(--th-background);
+}
+
+.group:hover .group-hover\:text-th-text {
+  color: var(--th-text);
+}
+
+.group:hover .group-hover\:text-th-linkText {
+  color: var(--th-linkText);
+}
+
+.group:hover .group-hover\:text-th-linkTextSecondary {
+  color: var(--th-linkTextSecondary);
+}
+
+.group:hover .group-hover\:text-th-popUp {
+  color: var(--th-popUp);
+}
+
+.group:hover .group-hover\:text-th-error {
+  color: var(--th-error);
+}
+
+.focus-within\:text-th-background:focus-within {
+  color: var(--th-background);
+}
+
+.focus-within\:text-th-text:focus-within {
+  color: var(--th-text);
+}
+
+.focus-within\:text-th-linkText:focus-within {
+  color: var(--th-linkText);
+}
+
+.focus-within\:text-th-linkTextSecondary:focus-within {
+  color: var(--th-linkTextSecondary);
+}
+
+.focus-within\:text-th-popUp:focus-within {
+  color: var(--th-popUp);
+}
+
+.focus-within\:text-th-error:focus-within {
+  color: var(--th-error);
+}
+
+.hover\:text-th-background:hover {
+  color: var(--th-background);
+}
+
+.hover\:text-th-text:hover {
+  color: var(--th-text);
+}
+
+.hover\:text-th-linkText:hover {
+  color: var(--th-linkText);
+}
+
+.hover\:text-th-linkTextSecondary:hover {
+  color: var(--th-linkTextSecondary);
+}
+
+.hover\:text-th-popUp:hover {
+  color: var(--th-popUp);
+}
+
+.hover\:text-th-error:hover {
+  color: var(--th-error);
+}
+
+.focus\:text-th-background:focus {
+  color: var(--th-background);
+}
+
+.focus\:text-th-text:focus {
+  color: var(--th-text);
+}
+
+.focus\:text-th-linkText:focus {
+  color: var(--th-linkText);
+}
+
+.focus\:text-th-linkTextSecondary:focus {
+  color: var(--th-linkTextSecondary);
+}
+
+.focus\:text-th-popUp:focus {
+  color: var(--th-popUp);
+}
+
+.focus\:text-th-error:focus {
+  color: var(--th-error);
 }
 
 .text-opacity-0 {
@@ -17815,8 +18490,28 @@ video {
     --tw-divide-x-reverse: 1;
   }
 
-  .sm\:divide-background > :not([hidden]) ~ :not([hidden]) {
-    border-color: var(--backgroundColor);
+  .sm\:divide-th-background > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-background);
+  }
+
+  .sm\:divide-th-text > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-text);
+  }
+
+  .sm\:divide-th-linkText > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkText);
+  }
+
+  .sm\:divide-th-linkTextSecondary > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:divide-th-popUp > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-popUp);
+  }
+
+  .sm\:divide-th-error > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-error);
   }
 
   .sm\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -18002,24 +18697,124 @@ video {
             background-clip: text;
   }
 
-  .sm\:bg-background {
-    background-color: var(--backgroundColor);
+  .sm\:bg-th-background {
+    background-color: var(--th-background);
   }
 
-  .group:hover .sm\:group-hover\:bg-background {
-    background-color: var(--backgroundColor);
+  .sm\:bg-th-text {
+    background-color: var(--th-text);
   }
 
-  .sm\:focus-within\:bg-background:focus-within {
-    background-color: var(--backgroundColor);
+  .sm\:bg-th-linkText {
+    background-color: var(--th-linkText);
   }
 
-  .sm\:hover\:bg-background:hover {
-    background-color: var(--backgroundColor);
+  .sm\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
   }
 
-  .sm\:focus\:bg-background:focus {
-    background-color: var(--backgroundColor);
+  .sm\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .sm\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .group:hover .sm\:group-hover\:bg-th-background {
+    background-color: var(--th-background);
+  }
+
+  .group:hover .sm\:group-hover\:bg-th-text {
+    background-color: var(--th-text);
+  }
+
+  .group:hover .sm\:group-hover\:bg-th-linkText {
+    background-color: var(--th-linkText);
+  }
+
+  .group:hover .sm\:group-hover\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .sm\:group-hover\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .group:hover .sm\:group-hover\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .sm\:focus-within\:bg-th-background:focus-within {
+    background-color: var(--th-background);
+  }
+
+  .sm\:focus-within\:bg-th-text:focus-within {
+    background-color: var(--th-text);
+  }
+
+  .sm\:focus-within\:bg-th-linkText:focus-within {
+    background-color: var(--th-linkText);
+  }
+
+  .sm\:focus-within\:bg-th-linkTextSecondary:focus-within {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus-within\:bg-th-popUp:focus-within {
+    background-color: var(--th-popUp);
+  }
+
+  .sm\:focus-within\:bg-th-error:focus-within {
+    background-color: var(--th-error);
+  }
+
+  .sm\:hover\:bg-th-background:hover {
+    background-color: var(--th-background);
+  }
+
+  .sm\:hover\:bg-th-text:hover {
+    background-color: var(--th-text);
+  }
+
+  .sm\:hover\:bg-th-linkText:hover {
+    background-color: var(--th-linkText);
+  }
+
+  .sm\:hover\:bg-th-linkTextSecondary:hover {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:hover\:bg-th-popUp:hover {
+    background-color: var(--th-popUp);
+  }
+
+  .sm\:hover\:bg-th-error:hover {
+    background-color: var(--th-error);
+  }
+
+  .sm\:focus\:bg-th-background:focus {
+    background-color: var(--th-background);
+  }
+
+  .sm\:focus\:bg-th-text:focus {
+    background-color: var(--th-text);
+  }
+
+  .sm\:focus\:bg-th-linkText:focus {
+    background-color: var(--th-linkText);
+  }
+
+  .sm\:focus\:bg-th-linkTextSecondary:focus {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:bg-th-popUp:focus {
+    background-color: var(--th-popUp);
+  }
+
+  .sm\:focus\:bg-th-error:focus {
+    background-color: var(--th-error);
   }
 
   .sm\:bg-none {
@@ -18058,43 +18853,238 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .sm\:from-background {
-    --tw-gradient-from: var(--backgroundColor);
+  .sm\:from-th-background {
+    --tw-gradient-from: var(--th-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .sm\:via-background {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .sm\:to-background {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .sm\:hover\:from-background:hover {
-    --tw-gradient-from: var(--backgroundColor);
+  .sm\:from-th-text {
+    --tw-gradient-from: var(--th-text);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .sm\:hover\:via-background:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .sm\:hover\:to-background:hover {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .sm\:focus\:from-background:focus {
-    --tw-gradient-from: var(--backgroundColor);
+  .sm\:from-th-linkText {
+    --tw-gradient-from: var(--th-linkText);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .sm\:focus\:via-background:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:from-th-linkTextSecondary {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .sm\:focus\:to-background:focus {
-    --tw-gradient-to: var(--backgroundColor);
+  .sm\:from-th-popUp {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:from-th-error {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-th-background {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-th-text {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-th-linkText {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-th-linkTextSecondary {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-th-popUp {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:via-th-error {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:to-th-background {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .sm\:to-th-text {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .sm\:to-th-linkText {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .sm\:to-th-linkTextSecondary {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .sm\:to-th-popUp {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .sm\:to-th-error {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .sm\:hover\:from-th-background:hover {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-th-text:hover {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-th-linkText:hover {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-th-linkTextSecondary:hover {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-th-popUp:hover {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-th-error:hover {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-th-background:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-th-text:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-th-linkText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-th-linkTextSecondary:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-th-popUp:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:via-th-error:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:to-th-background:hover {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .sm\:hover\:to-th-text:hover {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .sm\:hover\:to-th-linkText:hover {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .sm\:hover\:to-th-linkTextSecondary:hover {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .sm\:hover\:to-th-popUp:hover {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .sm\:hover\:to-th-error:hover {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .sm\:focus\:from-th-background:focus {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-th-text:focus {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-th-linkText:focus {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-th-linkTextSecondary:focus {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-th-popUp:focus {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-th-error:focus {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-th-background:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-th-text:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-th-linkText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-th-linkTextSecondary:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-th-popUp:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:via-th-error:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:to-th-background:focus {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .sm\:focus\:to-th-text:focus {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .sm\:focus\:to-th-linkText:focus {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .sm\:focus\:to-th-linkTextSecondary:focus {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:to-th-popUp:focus {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .sm\:focus\:to-th-error:focus {
+    --tw-gradient-to: var(--th-error);
   }
 
   .sm\:bg-opacity-0 {
@@ -18477,24 +19467,124 @@ video {
     border-collapse: separate;
   }
 
-  .sm\:border-background {
-    border-color: var(--backgroundColor);
+  .sm\:border-th-background {
+    border-color: var(--th-background);
   }
 
-  .group:hover .sm\:group-hover\:border-background {
-    border-color: var(--backgroundColor);
+  .sm\:border-th-text {
+    border-color: var(--th-text);
   }
 
-  .sm\:focus-within\:border-background:focus-within {
-    border-color: var(--backgroundColor);
+  .sm\:border-th-linkText {
+    border-color: var(--th-linkText);
   }
 
-  .sm\:hover\:border-background:hover {
-    border-color: var(--backgroundColor);
+  .sm\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
   }
 
-  .sm\:focus\:border-background:focus {
-    border-color: var(--backgroundColor);
+  .sm\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .sm\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .group:hover .sm\:group-hover\:border-th-background {
+    border-color: var(--th-background);
+  }
+
+  .group:hover .sm\:group-hover\:border-th-text {
+    border-color: var(--th-text);
+  }
+
+  .group:hover .sm\:group-hover\:border-th-linkText {
+    border-color: var(--th-linkText);
+  }
+
+  .group:hover .sm\:group-hover\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .sm\:group-hover\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .group:hover .sm\:group-hover\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .sm\:focus-within\:border-th-background:focus-within {
+    border-color: var(--th-background);
+  }
+
+  .sm\:focus-within\:border-th-text:focus-within {
+    border-color: var(--th-text);
+  }
+
+  .sm\:focus-within\:border-th-linkText:focus-within {
+    border-color: var(--th-linkText);
+  }
+
+  .sm\:focus-within\:border-th-linkTextSecondary:focus-within {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus-within\:border-th-popUp:focus-within {
+    border-color: var(--th-popUp);
+  }
+
+  .sm\:focus-within\:border-th-error:focus-within {
+    border-color: var(--th-error);
+  }
+
+  .sm\:hover\:border-th-background:hover {
+    border-color: var(--th-background);
+  }
+
+  .sm\:hover\:border-th-text:hover {
+    border-color: var(--th-text);
+  }
+
+  .sm\:hover\:border-th-linkText:hover {
+    border-color: var(--th-linkText);
+  }
+
+  .sm\:hover\:border-th-linkTextSecondary:hover {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:hover\:border-th-popUp:hover {
+    border-color: var(--th-popUp);
+  }
+
+  .sm\:hover\:border-th-error:hover {
+    border-color: var(--th-error);
+  }
+
+  .sm\:focus\:border-th-background:focus {
+    border-color: var(--th-background);
+  }
+
+  .sm\:focus\:border-th-text:focus {
+    border-color: var(--th-text);
+  }
+
+  .sm\:focus\:border-th-linkText:focus {
+    border-color: var(--th-linkText);
+  }
+
+  .sm\:focus\:border-th-linkTextSecondary:focus {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:border-th-popUp:focus {
+    border-color: var(--th-popUp);
+  }
+
+  .sm\:focus\:border-th-error:focus {
+    border-color: var(--th-error);
   }
 
   .sm\:border-opacity-0 {
@@ -24077,12 +25167,52 @@ video {
     padding-left: 0.875rem;
   }
 
-  .sm\:placeholder-background::placeholder {
-    color: var(--backgroundColor);
+  .sm\:placeholder-th-background::placeholder {
+    color: var(--th-background);
   }
 
-  .sm\:focus\:placeholder-background:focus::placeholder {
-    color: var(--backgroundColor);
+  .sm\:placeholder-th-text::placeholder {
+    color: var(--th-text);
+  }
+
+  .sm\:placeholder-th-linkText::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .sm\:placeholder-th-linkTextSecondary::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:placeholder-th-popUp::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .sm\:placeholder-th-error::placeholder {
+    color: var(--th-error);
+  }
+
+  .sm\:focus\:placeholder-th-background:focus::placeholder {
+    color: var(--th-background);
+  }
+
+  .sm\:focus\:placeholder-th-text:focus::placeholder {
+    color: var(--th-text);
+  }
+
+  .sm\:focus\:placeholder-th-linkText:focus::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .sm\:focus\:placeholder-th-linkTextSecondary:focus::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:placeholder-th-popUp:focus::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .sm\:focus\:placeholder-th-error:focus::placeholder {
+    color: var(--th-error);
   }
 
   .sm\:placeholder-opacity-0::placeholder {
@@ -27374,16 +28504,76 @@ video {
     --tw-ring-inset: inset;
   }
 
-  .sm\:ring-offset-background {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .sm\:ring-offset-th-background {
+    --tw-ring-offset-color: var(--th-background);
   }
 
-  .sm\:focus-within\:ring-offset-background:focus-within {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .sm\:ring-offset-th-text {
+    --tw-ring-offset-color: var(--th-text);
   }
 
-  .sm\:focus\:ring-offset-background:focus {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .sm\:ring-offset-th-linkText {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .sm\:ring-offset-th-linkTextSecondary {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:ring-offset-th-popUp {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .sm\:ring-offset-th-error {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .sm\:focus-within\:ring-offset-th-background:focus-within {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .sm\:focus-within\:ring-offset-th-text:focus-within {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .sm\:focus-within\:ring-offset-th-linkText:focus-within {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .sm\:focus-within\:ring-offset-th-linkTextSecondary:focus-within {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus-within\:ring-offset-th-popUp:focus-within {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .sm\:focus-within\:ring-offset-th-error:focus-within {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .sm\:focus\:ring-offset-th-background:focus {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .sm\:focus\:ring-offset-th-text:focus {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .sm\:focus\:ring-offset-th-linkText:focus {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .sm\:focus\:ring-offset-th-linkTextSecondary:focus {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:ring-offset-th-popUp:focus {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .sm\:focus\:ring-offset-th-error:focus {
+    --tw-ring-offset-color: var(--th-error);
   }
 
   .sm\:ring-offset-0 {
@@ -27446,16 +28636,76 @@ video {
     --tw-ring-offset-width: 8px;
   }
 
-  .sm\:ring-background {
-    --tw-ring-color: var(--backgroundColor);
+  .sm\:ring-th-background {
+    --tw-ring-color: var(--th-background);
   }
 
-  .sm\:focus-within\:ring-background:focus-within {
-    --tw-ring-color: var(--backgroundColor);
+  .sm\:ring-th-text {
+    --tw-ring-color: var(--th-text);
   }
 
-  .sm\:focus\:ring-background:focus {
-    --tw-ring-color: var(--backgroundColor);
+  .sm\:ring-th-linkText {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .sm\:ring-th-linkTextSecondary {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:ring-th-popUp {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .sm\:ring-th-error {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .sm\:focus-within\:ring-th-background:focus-within {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .sm\:focus-within\:ring-th-text:focus-within {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .sm\:focus-within\:ring-th-linkText:focus-within {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .sm\:focus-within\:ring-th-linkTextSecondary:focus-within {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus-within\:ring-th-popUp:focus-within {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .sm\:focus-within\:ring-th-error:focus-within {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .sm\:focus\:ring-th-background:focus {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .sm\:focus\:ring-th-text:focus {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .sm\:focus\:ring-th-linkText:focus {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .sm\:focus\:ring-th-linkTextSecondary:focus {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:ring-th-popUp:focus {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .sm\:focus\:ring-th-error:focus {
+    --tw-ring-color: var(--th-error);
   }
 
   .sm\:ring-opacity-0 {
@@ -27682,24 +28932,124 @@ video {
     text-align: justify;
   }
 
-  .sm\:text-background {
-    color: var(--backgroundColor);
+  .sm\:text-th-background {
+    color: var(--th-background);
   }
 
-  .group:hover .sm\:group-hover\:text-background {
-    color: var(--backgroundColor);
+  .sm\:text-th-text {
+    color: var(--th-text);
   }
 
-  .sm\:focus-within\:text-background:focus-within {
-    color: var(--backgroundColor);
+  .sm\:text-th-linkText {
+    color: var(--th-linkText);
   }
 
-  .sm\:hover\:text-background:hover {
-    color: var(--backgroundColor);
+  .sm\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
   }
 
-  .sm\:focus\:text-background:focus {
-    color: var(--backgroundColor);
+  .sm\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .sm\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .group:hover .sm\:group-hover\:text-th-background {
+    color: var(--th-background);
+  }
+
+  .group:hover .sm\:group-hover\:text-th-text {
+    color: var(--th-text);
+  }
+
+  .group:hover .sm\:group-hover\:text-th-linkText {
+    color: var(--th-linkText);
+  }
+
+  .group:hover .sm\:group-hover\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .sm\:group-hover\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .group:hover .sm\:group-hover\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .sm\:focus-within\:text-th-background:focus-within {
+    color: var(--th-background);
+  }
+
+  .sm\:focus-within\:text-th-text:focus-within {
+    color: var(--th-text);
+  }
+
+  .sm\:focus-within\:text-th-linkText:focus-within {
+    color: var(--th-linkText);
+  }
+
+  .sm\:focus-within\:text-th-linkTextSecondary:focus-within {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus-within\:text-th-popUp:focus-within {
+    color: var(--th-popUp);
+  }
+
+  .sm\:focus-within\:text-th-error:focus-within {
+    color: var(--th-error);
+  }
+
+  .sm\:hover\:text-th-background:hover {
+    color: var(--th-background);
+  }
+
+  .sm\:hover\:text-th-text:hover {
+    color: var(--th-text);
+  }
+
+  .sm\:hover\:text-th-linkText:hover {
+    color: var(--th-linkText);
+  }
+
+  .sm\:hover\:text-th-linkTextSecondary:hover {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:hover\:text-th-popUp:hover {
+    color: var(--th-popUp);
+  }
+
+  .sm\:hover\:text-th-error:hover {
+    color: var(--th-error);
+  }
+
+  .sm\:focus\:text-th-background:focus {
+    color: var(--th-background);
+  }
+
+  .sm\:focus\:text-th-text:focus {
+    color: var(--th-text);
+  }
+
+  .sm\:focus\:text-th-linkText:focus {
+    color: var(--th-linkText);
+  }
+
+  .sm\:focus\:text-th-linkTextSecondary:focus {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .sm\:focus\:text-th-popUp:focus {
+    color: var(--th-popUp);
+  }
+
+  .sm\:focus\:text-th-error:focus {
+    color: var(--th-error);
   }
 
   .sm\:text-opacity-0 {
@@ -34006,8 +35356,28 @@ video {
     --tw-divide-x-reverse: 1;
   }
 
-  .md\:divide-background > :not([hidden]) ~ :not([hidden]) {
-    border-color: var(--backgroundColor);
+  .md\:divide-th-background > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-background);
+  }
+
+  .md\:divide-th-text > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-text);
+  }
+
+  .md\:divide-th-linkText > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkText);
+  }
+
+  .md\:divide-th-linkTextSecondary > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:divide-th-popUp > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-popUp);
+  }
+
+  .md\:divide-th-error > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-error);
   }
 
   .md\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -34193,24 +35563,124 @@ video {
             background-clip: text;
   }
 
-  .md\:bg-background {
-    background-color: var(--backgroundColor);
+  .md\:bg-th-background {
+    background-color: var(--th-background);
   }
 
-  .group:hover .md\:group-hover\:bg-background {
-    background-color: var(--backgroundColor);
+  .md\:bg-th-text {
+    background-color: var(--th-text);
   }
 
-  .md\:focus-within\:bg-background:focus-within {
-    background-color: var(--backgroundColor);
+  .md\:bg-th-linkText {
+    background-color: var(--th-linkText);
   }
 
-  .md\:hover\:bg-background:hover {
-    background-color: var(--backgroundColor);
+  .md\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
   }
 
-  .md\:focus\:bg-background:focus {
-    background-color: var(--backgroundColor);
+  .md\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .md\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .group:hover .md\:group-hover\:bg-th-background {
+    background-color: var(--th-background);
+  }
+
+  .group:hover .md\:group-hover\:bg-th-text {
+    background-color: var(--th-text);
+  }
+
+  .group:hover .md\:group-hover\:bg-th-linkText {
+    background-color: var(--th-linkText);
+  }
+
+  .group:hover .md\:group-hover\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .md\:group-hover\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .group:hover .md\:group-hover\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .md\:focus-within\:bg-th-background:focus-within {
+    background-color: var(--th-background);
+  }
+
+  .md\:focus-within\:bg-th-text:focus-within {
+    background-color: var(--th-text);
+  }
+
+  .md\:focus-within\:bg-th-linkText:focus-within {
+    background-color: var(--th-linkText);
+  }
+
+  .md\:focus-within\:bg-th-linkTextSecondary:focus-within {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus-within\:bg-th-popUp:focus-within {
+    background-color: var(--th-popUp);
+  }
+
+  .md\:focus-within\:bg-th-error:focus-within {
+    background-color: var(--th-error);
+  }
+
+  .md\:hover\:bg-th-background:hover {
+    background-color: var(--th-background);
+  }
+
+  .md\:hover\:bg-th-text:hover {
+    background-color: var(--th-text);
+  }
+
+  .md\:hover\:bg-th-linkText:hover {
+    background-color: var(--th-linkText);
+  }
+
+  .md\:hover\:bg-th-linkTextSecondary:hover {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:hover\:bg-th-popUp:hover {
+    background-color: var(--th-popUp);
+  }
+
+  .md\:hover\:bg-th-error:hover {
+    background-color: var(--th-error);
+  }
+
+  .md\:focus\:bg-th-background:focus {
+    background-color: var(--th-background);
+  }
+
+  .md\:focus\:bg-th-text:focus {
+    background-color: var(--th-text);
+  }
+
+  .md\:focus\:bg-th-linkText:focus {
+    background-color: var(--th-linkText);
+  }
+
+  .md\:focus\:bg-th-linkTextSecondary:focus {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:bg-th-popUp:focus {
+    background-color: var(--th-popUp);
+  }
+
+  .md\:focus\:bg-th-error:focus {
+    background-color: var(--th-error);
   }
 
   .md\:bg-none {
@@ -34249,43 +35719,238 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .md\:from-background {
-    --tw-gradient-from: var(--backgroundColor);
+  .md\:from-th-background {
+    --tw-gradient-from: var(--th-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .md\:via-background {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .md\:to-background {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .md\:hover\:from-background:hover {
-    --tw-gradient-from: var(--backgroundColor);
+  .md\:from-th-text {
+    --tw-gradient-from: var(--th-text);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .md\:hover\:via-background:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .md\:hover\:to-background:hover {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .md\:focus\:from-background:focus {
-    --tw-gradient-from: var(--backgroundColor);
+  .md\:from-th-linkText {
+    --tw-gradient-from: var(--th-linkText);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .md\:focus\:via-background:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:from-th-linkTextSecondary {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .md\:focus\:to-background:focus {
-    --tw-gradient-to: var(--backgroundColor);
+  .md\:from-th-popUp {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:from-th-error {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-th-background {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-th-text {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-th-linkText {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-th-linkTextSecondary {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-th-popUp {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:via-th-error {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:to-th-background {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .md\:to-th-text {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .md\:to-th-linkText {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .md\:to-th-linkTextSecondary {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .md\:to-th-popUp {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .md\:to-th-error {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .md\:hover\:from-th-background:hover {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-th-text:hover {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-th-linkText:hover {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-th-linkTextSecondary:hover {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-th-popUp:hover {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-th-error:hover {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-th-background:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-th-text:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-th-linkText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-th-linkTextSecondary:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-th-popUp:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:via-th-error:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:to-th-background:hover {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .md\:hover\:to-th-text:hover {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .md\:hover\:to-th-linkText:hover {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .md\:hover\:to-th-linkTextSecondary:hover {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .md\:hover\:to-th-popUp:hover {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .md\:hover\:to-th-error:hover {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .md\:focus\:from-th-background:focus {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-th-text:focus {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-th-linkText:focus {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-th-linkTextSecondary:focus {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-th-popUp:focus {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-th-error:focus {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-th-background:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-th-text:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-th-linkText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-th-linkTextSecondary:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-th-popUp:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:via-th-error:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:to-th-background:focus {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .md\:focus\:to-th-text:focus {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .md\:focus\:to-th-linkText:focus {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .md\:focus\:to-th-linkTextSecondary:focus {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:to-th-popUp:focus {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .md\:focus\:to-th-error:focus {
+    --tw-gradient-to: var(--th-error);
   }
 
   .md\:bg-opacity-0 {
@@ -34668,24 +36333,124 @@ video {
     border-collapse: separate;
   }
 
-  .md\:border-background {
-    border-color: var(--backgroundColor);
+  .md\:border-th-background {
+    border-color: var(--th-background);
   }
 
-  .group:hover .md\:group-hover\:border-background {
-    border-color: var(--backgroundColor);
+  .md\:border-th-text {
+    border-color: var(--th-text);
   }
 
-  .md\:focus-within\:border-background:focus-within {
-    border-color: var(--backgroundColor);
+  .md\:border-th-linkText {
+    border-color: var(--th-linkText);
   }
 
-  .md\:hover\:border-background:hover {
-    border-color: var(--backgroundColor);
+  .md\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
   }
 
-  .md\:focus\:border-background:focus {
-    border-color: var(--backgroundColor);
+  .md\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .md\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .group:hover .md\:group-hover\:border-th-background {
+    border-color: var(--th-background);
+  }
+
+  .group:hover .md\:group-hover\:border-th-text {
+    border-color: var(--th-text);
+  }
+
+  .group:hover .md\:group-hover\:border-th-linkText {
+    border-color: var(--th-linkText);
+  }
+
+  .group:hover .md\:group-hover\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .md\:group-hover\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .group:hover .md\:group-hover\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .md\:focus-within\:border-th-background:focus-within {
+    border-color: var(--th-background);
+  }
+
+  .md\:focus-within\:border-th-text:focus-within {
+    border-color: var(--th-text);
+  }
+
+  .md\:focus-within\:border-th-linkText:focus-within {
+    border-color: var(--th-linkText);
+  }
+
+  .md\:focus-within\:border-th-linkTextSecondary:focus-within {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus-within\:border-th-popUp:focus-within {
+    border-color: var(--th-popUp);
+  }
+
+  .md\:focus-within\:border-th-error:focus-within {
+    border-color: var(--th-error);
+  }
+
+  .md\:hover\:border-th-background:hover {
+    border-color: var(--th-background);
+  }
+
+  .md\:hover\:border-th-text:hover {
+    border-color: var(--th-text);
+  }
+
+  .md\:hover\:border-th-linkText:hover {
+    border-color: var(--th-linkText);
+  }
+
+  .md\:hover\:border-th-linkTextSecondary:hover {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:hover\:border-th-popUp:hover {
+    border-color: var(--th-popUp);
+  }
+
+  .md\:hover\:border-th-error:hover {
+    border-color: var(--th-error);
+  }
+
+  .md\:focus\:border-th-background:focus {
+    border-color: var(--th-background);
+  }
+
+  .md\:focus\:border-th-text:focus {
+    border-color: var(--th-text);
+  }
+
+  .md\:focus\:border-th-linkText:focus {
+    border-color: var(--th-linkText);
+  }
+
+  .md\:focus\:border-th-linkTextSecondary:focus {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:border-th-popUp:focus {
+    border-color: var(--th-popUp);
+  }
+
+  .md\:focus\:border-th-error:focus {
+    border-color: var(--th-error);
   }
 
   .md\:border-opacity-0 {
@@ -40268,12 +42033,52 @@ video {
     padding-left: 0.875rem;
   }
 
-  .md\:placeholder-background::placeholder {
-    color: var(--backgroundColor);
+  .md\:placeholder-th-background::placeholder {
+    color: var(--th-background);
   }
 
-  .md\:focus\:placeholder-background:focus::placeholder {
-    color: var(--backgroundColor);
+  .md\:placeholder-th-text::placeholder {
+    color: var(--th-text);
+  }
+
+  .md\:placeholder-th-linkText::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .md\:placeholder-th-linkTextSecondary::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .md\:placeholder-th-popUp::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .md\:placeholder-th-error::placeholder {
+    color: var(--th-error);
+  }
+
+  .md\:focus\:placeholder-th-background:focus::placeholder {
+    color: var(--th-background);
+  }
+
+  .md\:focus\:placeholder-th-text:focus::placeholder {
+    color: var(--th-text);
+  }
+
+  .md\:focus\:placeholder-th-linkText:focus::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .md\:focus\:placeholder-th-linkTextSecondary:focus::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:placeholder-th-popUp:focus::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .md\:focus\:placeholder-th-error:focus::placeholder {
+    color: var(--th-error);
   }
 
   .md\:placeholder-opacity-0::placeholder {
@@ -43565,16 +45370,76 @@ video {
     --tw-ring-inset: inset;
   }
 
-  .md\:ring-offset-background {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .md\:ring-offset-th-background {
+    --tw-ring-offset-color: var(--th-background);
   }
 
-  .md\:focus-within\:ring-offset-background:focus-within {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .md\:ring-offset-th-text {
+    --tw-ring-offset-color: var(--th-text);
   }
 
-  .md\:focus\:ring-offset-background:focus {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .md\:ring-offset-th-linkText {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .md\:ring-offset-th-linkTextSecondary {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:ring-offset-th-popUp {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .md\:ring-offset-th-error {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .md\:focus-within\:ring-offset-th-background:focus-within {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .md\:focus-within\:ring-offset-th-text:focus-within {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .md\:focus-within\:ring-offset-th-linkText:focus-within {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .md\:focus-within\:ring-offset-th-linkTextSecondary:focus-within {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus-within\:ring-offset-th-popUp:focus-within {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .md\:focus-within\:ring-offset-th-error:focus-within {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .md\:focus\:ring-offset-th-background:focus {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .md\:focus\:ring-offset-th-text:focus {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .md\:focus\:ring-offset-th-linkText:focus {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .md\:focus\:ring-offset-th-linkTextSecondary:focus {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:ring-offset-th-popUp:focus {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .md\:focus\:ring-offset-th-error:focus {
+    --tw-ring-offset-color: var(--th-error);
   }
 
   .md\:ring-offset-0 {
@@ -43637,16 +45502,76 @@ video {
     --tw-ring-offset-width: 8px;
   }
 
-  .md\:ring-background {
-    --tw-ring-color: var(--backgroundColor);
+  .md\:ring-th-background {
+    --tw-ring-color: var(--th-background);
   }
 
-  .md\:focus-within\:ring-background:focus-within {
-    --tw-ring-color: var(--backgroundColor);
+  .md\:ring-th-text {
+    --tw-ring-color: var(--th-text);
   }
 
-  .md\:focus\:ring-background:focus {
-    --tw-ring-color: var(--backgroundColor);
+  .md\:ring-th-linkText {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .md\:ring-th-linkTextSecondary {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:ring-th-popUp {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .md\:ring-th-error {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .md\:focus-within\:ring-th-background:focus-within {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .md\:focus-within\:ring-th-text:focus-within {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .md\:focus-within\:ring-th-linkText:focus-within {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .md\:focus-within\:ring-th-linkTextSecondary:focus-within {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus-within\:ring-th-popUp:focus-within {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .md\:focus-within\:ring-th-error:focus-within {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .md\:focus\:ring-th-background:focus {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .md\:focus\:ring-th-text:focus {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .md\:focus\:ring-th-linkText:focus {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .md\:focus\:ring-th-linkTextSecondary:focus {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:ring-th-popUp:focus {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .md\:focus\:ring-th-error:focus {
+    --tw-ring-color: var(--th-error);
   }
 
   .md\:ring-opacity-0 {
@@ -43873,24 +45798,124 @@ video {
     text-align: justify;
   }
 
-  .md\:text-background {
-    color: var(--backgroundColor);
+  .md\:text-th-background {
+    color: var(--th-background);
   }
 
-  .group:hover .md\:group-hover\:text-background {
-    color: var(--backgroundColor);
+  .md\:text-th-text {
+    color: var(--th-text);
   }
 
-  .md\:focus-within\:text-background:focus-within {
-    color: var(--backgroundColor);
+  .md\:text-th-linkText {
+    color: var(--th-linkText);
   }
 
-  .md\:hover\:text-background:hover {
-    color: var(--backgroundColor);
+  .md\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
   }
 
-  .md\:focus\:text-background:focus {
-    color: var(--backgroundColor);
+  .md\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .md\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .group:hover .md\:group-hover\:text-th-background {
+    color: var(--th-background);
+  }
+
+  .group:hover .md\:group-hover\:text-th-text {
+    color: var(--th-text);
+  }
+
+  .group:hover .md\:group-hover\:text-th-linkText {
+    color: var(--th-linkText);
+  }
+
+  .group:hover .md\:group-hover\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .md\:group-hover\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .group:hover .md\:group-hover\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .md\:focus-within\:text-th-background:focus-within {
+    color: var(--th-background);
+  }
+
+  .md\:focus-within\:text-th-text:focus-within {
+    color: var(--th-text);
+  }
+
+  .md\:focus-within\:text-th-linkText:focus-within {
+    color: var(--th-linkText);
+  }
+
+  .md\:focus-within\:text-th-linkTextSecondary:focus-within {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus-within\:text-th-popUp:focus-within {
+    color: var(--th-popUp);
+  }
+
+  .md\:focus-within\:text-th-error:focus-within {
+    color: var(--th-error);
+  }
+
+  .md\:hover\:text-th-background:hover {
+    color: var(--th-background);
+  }
+
+  .md\:hover\:text-th-text:hover {
+    color: var(--th-text);
+  }
+
+  .md\:hover\:text-th-linkText:hover {
+    color: var(--th-linkText);
+  }
+
+  .md\:hover\:text-th-linkTextSecondary:hover {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .md\:hover\:text-th-popUp:hover {
+    color: var(--th-popUp);
+  }
+
+  .md\:hover\:text-th-error:hover {
+    color: var(--th-error);
+  }
+
+  .md\:focus\:text-th-background:focus {
+    color: var(--th-background);
+  }
+
+  .md\:focus\:text-th-text:focus {
+    color: var(--th-text);
+  }
+
+  .md\:focus\:text-th-linkText:focus {
+    color: var(--th-linkText);
+  }
+
+  .md\:focus\:text-th-linkTextSecondary:focus {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .md\:focus\:text-th-popUp:focus {
+    color: var(--th-popUp);
+  }
+
+  .md\:focus\:text-th-error:focus {
+    color: var(--th-error);
   }
 
   .md\:text-opacity-0 {
@@ -50197,8 +52222,28 @@ video {
     --tw-divide-x-reverse: 1;
   }
 
-  .lg\:divide-background > :not([hidden]) ~ :not([hidden]) {
-    border-color: var(--backgroundColor);
+  .lg\:divide-th-background > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-background);
+  }
+
+  .lg\:divide-th-text > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-text);
+  }
+
+  .lg\:divide-th-linkText > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkText);
+  }
+
+  .lg\:divide-th-linkTextSecondary > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:divide-th-popUp > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-popUp);
+  }
+
+  .lg\:divide-th-error > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-error);
   }
 
   .lg\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -50384,24 +52429,124 @@ video {
             background-clip: text;
   }
 
-  .lg\:bg-background {
-    background-color: var(--backgroundColor);
+  .lg\:bg-th-background {
+    background-color: var(--th-background);
   }
 
-  .group:hover .lg\:group-hover\:bg-background {
-    background-color: var(--backgroundColor);
+  .lg\:bg-th-text {
+    background-color: var(--th-text);
   }
 
-  .lg\:focus-within\:bg-background:focus-within {
-    background-color: var(--backgroundColor);
+  .lg\:bg-th-linkText {
+    background-color: var(--th-linkText);
   }
 
-  .lg\:hover\:bg-background:hover {
-    background-color: var(--backgroundColor);
+  .lg\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
   }
 
-  .lg\:focus\:bg-background:focus {
-    background-color: var(--backgroundColor);
+  .lg\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .lg\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .group:hover .lg\:group-hover\:bg-th-background {
+    background-color: var(--th-background);
+  }
+
+  .group:hover .lg\:group-hover\:bg-th-text {
+    background-color: var(--th-text);
+  }
+
+  .group:hover .lg\:group-hover\:bg-th-linkText {
+    background-color: var(--th-linkText);
+  }
+
+  .group:hover .lg\:group-hover\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .lg\:group-hover\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .group:hover .lg\:group-hover\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .lg\:focus-within\:bg-th-background:focus-within {
+    background-color: var(--th-background);
+  }
+
+  .lg\:focus-within\:bg-th-text:focus-within {
+    background-color: var(--th-text);
+  }
+
+  .lg\:focus-within\:bg-th-linkText:focus-within {
+    background-color: var(--th-linkText);
+  }
+
+  .lg\:focus-within\:bg-th-linkTextSecondary:focus-within {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus-within\:bg-th-popUp:focus-within {
+    background-color: var(--th-popUp);
+  }
+
+  .lg\:focus-within\:bg-th-error:focus-within {
+    background-color: var(--th-error);
+  }
+
+  .lg\:hover\:bg-th-background:hover {
+    background-color: var(--th-background);
+  }
+
+  .lg\:hover\:bg-th-text:hover {
+    background-color: var(--th-text);
+  }
+
+  .lg\:hover\:bg-th-linkText:hover {
+    background-color: var(--th-linkText);
+  }
+
+  .lg\:hover\:bg-th-linkTextSecondary:hover {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:hover\:bg-th-popUp:hover {
+    background-color: var(--th-popUp);
+  }
+
+  .lg\:hover\:bg-th-error:hover {
+    background-color: var(--th-error);
+  }
+
+  .lg\:focus\:bg-th-background:focus {
+    background-color: var(--th-background);
+  }
+
+  .lg\:focus\:bg-th-text:focus {
+    background-color: var(--th-text);
+  }
+
+  .lg\:focus\:bg-th-linkText:focus {
+    background-color: var(--th-linkText);
+  }
+
+  .lg\:focus\:bg-th-linkTextSecondary:focus {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:bg-th-popUp:focus {
+    background-color: var(--th-popUp);
+  }
+
+  .lg\:focus\:bg-th-error:focus {
+    background-color: var(--th-error);
   }
 
   .lg\:bg-none {
@@ -50440,43 +52585,238 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .lg\:from-background {
-    --tw-gradient-from: var(--backgroundColor);
+  .lg\:from-th-background {
+    --tw-gradient-from: var(--th-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .lg\:via-background {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .lg\:to-background {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .lg\:hover\:from-background:hover {
-    --tw-gradient-from: var(--backgroundColor);
+  .lg\:from-th-text {
+    --tw-gradient-from: var(--th-text);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .lg\:hover\:via-background:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .lg\:hover\:to-background:hover {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .lg\:focus\:from-background:focus {
-    --tw-gradient-from: var(--backgroundColor);
+  .lg\:from-th-linkText {
+    --tw-gradient-from: var(--th-linkText);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .lg\:focus\:via-background:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:from-th-linkTextSecondary {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .lg\:focus\:to-background:focus {
-    --tw-gradient-to: var(--backgroundColor);
+  .lg\:from-th-popUp {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:from-th-error {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-th-background {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-th-text {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-th-linkText {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-th-linkTextSecondary {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-th-popUp {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:via-th-error {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:to-th-background {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .lg\:to-th-text {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .lg\:to-th-linkText {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .lg\:to-th-linkTextSecondary {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .lg\:to-th-popUp {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .lg\:to-th-error {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .lg\:hover\:from-th-background:hover {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-th-text:hover {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-th-linkText:hover {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-th-linkTextSecondary:hover {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-th-popUp:hover {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-th-error:hover {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-th-background:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-th-text:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-th-linkText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-th-linkTextSecondary:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-th-popUp:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:via-th-error:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:to-th-background:hover {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .lg\:hover\:to-th-text:hover {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .lg\:hover\:to-th-linkText:hover {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .lg\:hover\:to-th-linkTextSecondary:hover {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .lg\:hover\:to-th-popUp:hover {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .lg\:hover\:to-th-error:hover {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .lg\:focus\:from-th-background:focus {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-th-text:focus {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-th-linkText:focus {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-th-linkTextSecondary:focus {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-th-popUp:focus {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-th-error:focus {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-th-background:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-th-text:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-th-linkText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-th-linkTextSecondary:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-th-popUp:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:via-th-error:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:to-th-background:focus {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .lg\:focus\:to-th-text:focus {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .lg\:focus\:to-th-linkText:focus {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .lg\:focus\:to-th-linkTextSecondary:focus {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:to-th-popUp:focus {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .lg\:focus\:to-th-error:focus {
+    --tw-gradient-to: var(--th-error);
   }
 
   .lg\:bg-opacity-0 {
@@ -50859,24 +53199,124 @@ video {
     border-collapse: separate;
   }
 
-  .lg\:border-background {
-    border-color: var(--backgroundColor);
+  .lg\:border-th-background {
+    border-color: var(--th-background);
   }
 
-  .group:hover .lg\:group-hover\:border-background {
-    border-color: var(--backgroundColor);
+  .lg\:border-th-text {
+    border-color: var(--th-text);
   }
 
-  .lg\:focus-within\:border-background:focus-within {
-    border-color: var(--backgroundColor);
+  .lg\:border-th-linkText {
+    border-color: var(--th-linkText);
   }
 
-  .lg\:hover\:border-background:hover {
-    border-color: var(--backgroundColor);
+  .lg\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
   }
 
-  .lg\:focus\:border-background:focus {
-    border-color: var(--backgroundColor);
+  .lg\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .lg\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .group:hover .lg\:group-hover\:border-th-background {
+    border-color: var(--th-background);
+  }
+
+  .group:hover .lg\:group-hover\:border-th-text {
+    border-color: var(--th-text);
+  }
+
+  .group:hover .lg\:group-hover\:border-th-linkText {
+    border-color: var(--th-linkText);
+  }
+
+  .group:hover .lg\:group-hover\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .lg\:group-hover\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .group:hover .lg\:group-hover\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .lg\:focus-within\:border-th-background:focus-within {
+    border-color: var(--th-background);
+  }
+
+  .lg\:focus-within\:border-th-text:focus-within {
+    border-color: var(--th-text);
+  }
+
+  .lg\:focus-within\:border-th-linkText:focus-within {
+    border-color: var(--th-linkText);
+  }
+
+  .lg\:focus-within\:border-th-linkTextSecondary:focus-within {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus-within\:border-th-popUp:focus-within {
+    border-color: var(--th-popUp);
+  }
+
+  .lg\:focus-within\:border-th-error:focus-within {
+    border-color: var(--th-error);
+  }
+
+  .lg\:hover\:border-th-background:hover {
+    border-color: var(--th-background);
+  }
+
+  .lg\:hover\:border-th-text:hover {
+    border-color: var(--th-text);
+  }
+
+  .lg\:hover\:border-th-linkText:hover {
+    border-color: var(--th-linkText);
+  }
+
+  .lg\:hover\:border-th-linkTextSecondary:hover {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:hover\:border-th-popUp:hover {
+    border-color: var(--th-popUp);
+  }
+
+  .lg\:hover\:border-th-error:hover {
+    border-color: var(--th-error);
+  }
+
+  .lg\:focus\:border-th-background:focus {
+    border-color: var(--th-background);
+  }
+
+  .lg\:focus\:border-th-text:focus {
+    border-color: var(--th-text);
+  }
+
+  .lg\:focus\:border-th-linkText:focus {
+    border-color: var(--th-linkText);
+  }
+
+  .lg\:focus\:border-th-linkTextSecondary:focus {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:border-th-popUp:focus {
+    border-color: var(--th-popUp);
+  }
+
+  .lg\:focus\:border-th-error:focus {
+    border-color: var(--th-error);
   }
 
   .lg\:border-opacity-0 {
@@ -56459,12 +58899,52 @@ video {
     padding-left: 0.875rem;
   }
 
-  .lg\:placeholder-background::placeholder {
-    color: var(--backgroundColor);
+  .lg\:placeholder-th-background::placeholder {
+    color: var(--th-background);
   }
 
-  .lg\:focus\:placeholder-background:focus::placeholder {
-    color: var(--backgroundColor);
+  .lg\:placeholder-th-text::placeholder {
+    color: var(--th-text);
+  }
+
+  .lg\:placeholder-th-linkText::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .lg\:placeholder-th-linkTextSecondary::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:placeholder-th-popUp::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .lg\:placeholder-th-error::placeholder {
+    color: var(--th-error);
+  }
+
+  .lg\:focus\:placeholder-th-background:focus::placeholder {
+    color: var(--th-background);
+  }
+
+  .lg\:focus\:placeholder-th-text:focus::placeholder {
+    color: var(--th-text);
+  }
+
+  .lg\:focus\:placeholder-th-linkText:focus::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .lg\:focus\:placeholder-th-linkTextSecondary:focus::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:placeholder-th-popUp:focus::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .lg\:focus\:placeholder-th-error:focus::placeholder {
+    color: var(--th-error);
   }
 
   .lg\:placeholder-opacity-0::placeholder {
@@ -59756,16 +62236,76 @@ video {
     --tw-ring-inset: inset;
   }
 
-  .lg\:ring-offset-background {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .lg\:ring-offset-th-background {
+    --tw-ring-offset-color: var(--th-background);
   }
 
-  .lg\:focus-within\:ring-offset-background:focus-within {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .lg\:ring-offset-th-text {
+    --tw-ring-offset-color: var(--th-text);
   }
 
-  .lg\:focus\:ring-offset-background:focus {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .lg\:ring-offset-th-linkText {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .lg\:ring-offset-th-linkTextSecondary {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:ring-offset-th-popUp {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .lg\:ring-offset-th-error {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .lg\:focus-within\:ring-offset-th-background:focus-within {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .lg\:focus-within\:ring-offset-th-text:focus-within {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .lg\:focus-within\:ring-offset-th-linkText:focus-within {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .lg\:focus-within\:ring-offset-th-linkTextSecondary:focus-within {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus-within\:ring-offset-th-popUp:focus-within {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .lg\:focus-within\:ring-offset-th-error:focus-within {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .lg\:focus\:ring-offset-th-background:focus {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .lg\:focus\:ring-offset-th-text:focus {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .lg\:focus\:ring-offset-th-linkText:focus {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .lg\:focus\:ring-offset-th-linkTextSecondary:focus {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:ring-offset-th-popUp:focus {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .lg\:focus\:ring-offset-th-error:focus {
+    --tw-ring-offset-color: var(--th-error);
   }
 
   .lg\:ring-offset-0 {
@@ -59828,16 +62368,76 @@ video {
     --tw-ring-offset-width: 8px;
   }
 
-  .lg\:ring-background {
-    --tw-ring-color: var(--backgroundColor);
+  .lg\:ring-th-background {
+    --tw-ring-color: var(--th-background);
   }
 
-  .lg\:focus-within\:ring-background:focus-within {
-    --tw-ring-color: var(--backgroundColor);
+  .lg\:ring-th-text {
+    --tw-ring-color: var(--th-text);
   }
 
-  .lg\:focus\:ring-background:focus {
-    --tw-ring-color: var(--backgroundColor);
+  .lg\:ring-th-linkText {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .lg\:ring-th-linkTextSecondary {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:ring-th-popUp {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .lg\:ring-th-error {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .lg\:focus-within\:ring-th-background:focus-within {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .lg\:focus-within\:ring-th-text:focus-within {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .lg\:focus-within\:ring-th-linkText:focus-within {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .lg\:focus-within\:ring-th-linkTextSecondary:focus-within {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus-within\:ring-th-popUp:focus-within {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .lg\:focus-within\:ring-th-error:focus-within {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .lg\:focus\:ring-th-background:focus {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .lg\:focus\:ring-th-text:focus {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .lg\:focus\:ring-th-linkText:focus {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .lg\:focus\:ring-th-linkTextSecondary:focus {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:ring-th-popUp:focus {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .lg\:focus\:ring-th-error:focus {
+    --tw-ring-color: var(--th-error);
   }
 
   .lg\:ring-opacity-0 {
@@ -60064,24 +62664,124 @@ video {
     text-align: justify;
   }
 
-  .lg\:text-background {
-    color: var(--backgroundColor);
+  .lg\:text-th-background {
+    color: var(--th-background);
   }
 
-  .group:hover .lg\:group-hover\:text-background {
-    color: var(--backgroundColor);
+  .lg\:text-th-text {
+    color: var(--th-text);
   }
 
-  .lg\:focus-within\:text-background:focus-within {
-    color: var(--backgroundColor);
+  .lg\:text-th-linkText {
+    color: var(--th-linkText);
   }
 
-  .lg\:hover\:text-background:hover {
-    color: var(--backgroundColor);
+  .lg\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
   }
 
-  .lg\:focus\:text-background:focus {
-    color: var(--backgroundColor);
+  .lg\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .lg\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .group:hover .lg\:group-hover\:text-th-background {
+    color: var(--th-background);
+  }
+
+  .group:hover .lg\:group-hover\:text-th-text {
+    color: var(--th-text);
+  }
+
+  .group:hover .lg\:group-hover\:text-th-linkText {
+    color: var(--th-linkText);
+  }
+
+  .group:hover .lg\:group-hover\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .lg\:group-hover\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .group:hover .lg\:group-hover\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .lg\:focus-within\:text-th-background:focus-within {
+    color: var(--th-background);
+  }
+
+  .lg\:focus-within\:text-th-text:focus-within {
+    color: var(--th-text);
+  }
+
+  .lg\:focus-within\:text-th-linkText:focus-within {
+    color: var(--th-linkText);
+  }
+
+  .lg\:focus-within\:text-th-linkTextSecondary:focus-within {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus-within\:text-th-popUp:focus-within {
+    color: var(--th-popUp);
+  }
+
+  .lg\:focus-within\:text-th-error:focus-within {
+    color: var(--th-error);
+  }
+
+  .lg\:hover\:text-th-background:hover {
+    color: var(--th-background);
+  }
+
+  .lg\:hover\:text-th-text:hover {
+    color: var(--th-text);
+  }
+
+  .lg\:hover\:text-th-linkText:hover {
+    color: var(--th-linkText);
+  }
+
+  .lg\:hover\:text-th-linkTextSecondary:hover {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:hover\:text-th-popUp:hover {
+    color: var(--th-popUp);
+  }
+
+  .lg\:hover\:text-th-error:hover {
+    color: var(--th-error);
+  }
+
+  .lg\:focus\:text-th-background:focus {
+    color: var(--th-background);
+  }
+
+  .lg\:focus\:text-th-text:focus {
+    color: var(--th-text);
+  }
+
+  .lg\:focus\:text-th-linkText:focus {
+    color: var(--th-linkText);
+  }
+
+  .lg\:focus\:text-th-linkTextSecondary:focus {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .lg\:focus\:text-th-popUp:focus {
+    color: var(--th-popUp);
+  }
+
+  .lg\:focus\:text-th-error:focus {
+    color: var(--th-error);
   }
 
   .lg\:text-opacity-0 {
@@ -66388,8 +69088,28 @@ video {
     --tw-divide-x-reverse: 1;
   }
 
-  .xl\:divide-background > :not([hidden]) ~ :not([hidden]) {
-    border-color: var(--backgroundColor);
+  .xl\:divide-th-background > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-background);
+  }
+
+  .xl\:divide-th-text > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-text);
+  }
+
+  .xl\:divide-th-linkText > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkText);
+  }
+
+  .xl\:divide-th-linkTextSecondary > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:divide-th-popUp > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-popUp);
+  }
+
+  .xl\:divide-th-error > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-error);
   }
 
   .xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -66575,24 +69295,124 @@ video {
             background-clip: text;
   }
 
-  .xl\:bg-background {
-    background-color: var(--backgroundColor);
+  .xl\:bg-th-background {
+    background-color: var(--th-background);
   }
 
-  .group:hover .xl\:group-hover\:bg-background {
-    background-color: var(--backgroundColor);
+  .xl\:bg-th-text {
+    background-color: var(--th-text);
   }
 
-  .xl\:focus-within\:bg-background:focus-within {
-    background-color: var(--backgroundColor);
+  .xl\:bg-th-linkText {
+    background-color: var(--th-linkText);
   }
 
-  .xl\:hover\:bg-background:hover {
-    background-color: var(--backgroundColor);
+  .xl\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
   }
 
-  .xl\:focus\:bg-background:focus {
-    background-color: var(--backgroundColor);
+  .xl\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .xl\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .group:hover .xl\:group-hover\:bg-th-background {
+    background-color: var(--th-background);
+  }
+
+  .group:hover .xl\:group-hover\:bg-th-text {
+    background-color: var(--th-text);
+  }
+
+  .group:hover .xl\:group-hover\:bg-th-linkText {
+    background-color: var(--th-linkText);
+  }
+
+  .group:hover .xl\:group-hover\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .xl\:group-hover\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .group:hover .xl\:group-hover\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .xl\:focus-within\:bg-th-background:focus-within {
+    background-color: var(--th-background);
+  }
+
+  .xl\:focus-within\:bg-th-text:focus-within {
+    background-color: var(--th-text);
+  }
+
+  .xl\:focus-within\:bg-th-linkText:focus-within {
+    background-color: var(--th-linkText);
+  }
+
+  .xl\:focus-within\:bg-th-linkTextSecondary:focus-within {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus-within\:bg-th-popUp:focus-within {
+    background-color: var(--th-popUp);
+  }
+
+  .xl\:focus-within\:bg-th-error:focus-within {
+    background-color: var(--th-error);
+  }
+
+  .xl\:hover\:bg-th-background:hover {
+    background-color: var(--th-background);
+  }
+
+  .xl\:hover\:bg-th-text:hover {
+    background-color: var(--th-text);
+  }
+
+  .xl\:hover\:bg-th-linkText:hover {
+    background-color: var(--th-linkText);
+  }
+
+  .xl\:hover\:bg-th-linkTextSecondary:hover {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:hover\:bg-th-popUp:hover {
+    background-color: var(--th-popUp);
+  }
+
+  .xl\:hover\:bg-th-error:hover {
+    background-color: var(--th-error);
+  }
+
+  .xl\:focus\:bg-th-background:focus {
+    background-color: var(--th-background);
+  }
+
+  .xl\:focus\:bg-th-text:focus {
+    background-color: var(--th-text);
+  }
+
+  .xl\:focus\:bg-th-linkText:focus {
+    background-color: var(--th-linkText);
+  }
+
+  .xl\:focus\:bg-th-linkTextSecondary:focus {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:bg-th-popUp:focus {
+    background-color: var(--th-popUp);
+  }
+
+  .xl\:focus\:bg-th-error:focus {
+    background-color: var(--th-error);
   }
 
   .xl\:bg-none {
@@ -66631,43 +69451,238 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .xl\:from-background {
-    --tw-gradient-from: var(--backgroundColor);
+  .xl\:from-th-background {
+    --tw-gradient-from: var(--th-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .xl\:via-background {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .xl\:to-background {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .xl\:hover\:from-background:hover {
-    --tw-gradient-from: var(--backgroundColor);
+  .xl\:from-th-text {
+    --tw-gradient-from: var(--th-text);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .xl\:hover\:via-background:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .xl\:hover\:to-background:hover {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .xl\:focus\:from-background:focus {
-    --tw-gradient-from: var(--backgroundColor);
+  .xl\:from-th-linkText {
+    --tw-gradient-from: var(--th-linkText);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .xl\:focus\:via-background:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:from-th-linkTextSecondary {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .xl\:focus\:to-background:focus {
-    --tw-gradient-to: var(--backgroundColor);
+  .xl\:from-th-popUp {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:from-th-error {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-th-background {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-th-text {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-th-linkText {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-th-linkTextSecondary {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-th-popUp {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:via-th-error {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:to-th-background {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .xl\:to-th-text {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .xl\:to-th-linkText {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .xl\:to-th-linkTextSecondary {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .xl\:to-th-popUp {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .xl\:to-th-error {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .xl\:hover\:from-th-background:hover {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-th-text:hover {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-th-linkText:hover {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-th-linkTextSecondary:hover {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-th-popUp:hover {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-th-error:hover {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-th-background:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-th-text:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-th-linkText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-th-linkTextSecondary:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-th-popUp:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:via-th-error:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:to-th-background:hover {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .xl\:hover\:to-th-text:hover {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .xl\:hover\:to-th-linkText:hover {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .xl\:hover\:to-th-linkTextSecondary:hover {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .xl\:hover\:to-th-popUp:hover {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .xl\:hover\:to-th-error:hover {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .xl\:focus\:from-th-background:focus {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-th-text:focus {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-th-linkText:focus {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-th-linkTextSecondary:focus {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-th-popUp:focus {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-th-error:focus {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-th-background:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-th-text:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-th-linkText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-th-linkTextSecondary:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-th-popUp:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:via-th-error:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:to-th-background:focus {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .xl\:focus\:to-th-text:focus {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .xl\:focus\:to-th-linkText:focus {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .xl\:focus\:to-th-linkTextSecondary:focus {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:to-th-popUp:focus {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .xl\:focus\:to-th-error:focus {
+    --tw-gradient-to: var(--th-error);
   }
 
   .xl\:bg-opacity-0 {
@@ -67050,24 +70065,124 @@ video {
     border-collapse: separate;
   }
 
-  .xl\:border-background {
-    border-color: var(--backgroundColor);
+  .xl\:border-th-background {
+    border-color: var(--th-background);
   }
 
-  .group:hover .xl\:group-hover\:border-background {
-    border-color: var(--backgroundColor);
+  .xl\:border-th-text {
+    border-color: var(--th-text);
   }
 
-  .xl\:focus-within\:border-background:focus-within {
-    border-color: var(--backgroundColor);
+  .xl\:border-th-linkText {
+    border-color: var(--th-linkText);
   }
 
-  .xl\:hover\:border-background:hover {
-    border-color: var(--backgroundColor);
+  .xl\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
   }
 
-  .xl\:focus\:border-background:focus {
-    border-color: var(--backgroundColor);
+  .xl\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .xl\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .group:hover .xl\:group-hover\:border-th-background {
+    border-color: var(--th-background);
+  }
+
+  .group:hover .xl\:group-hover\:border-th-text {
+    border-color: var(--th-text);
+  }
+
+  .group:hover .xl\:group-hover\:border-th-linkText {
+    border-color: var(--th-linkText);
+  }
+
+  .group:hover .xl\:group-hover\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .xl\:group-hover\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .group:hover .xl\:group-hover\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .xl\:focus-within\:border-th-background:focus-within {
+    border-color: var(--th-background);
+  }
+
+  .xl\:focus-within\:border-th-text:focus-within {
+    border-color: var(--th-text);
+  }
+
+  .xl\:focus-within\:border-th-linkText:focus-within {
+    border-color: var(--th-linkText);
+  }
+
+  .xl\:focus-within\:border-th-linkTextSecondary:focus-within {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus-within\:border-th-popUp:focus-within {
+    border-color: var(--th-popUp);
+  }
+
+  .xl\:focus-within\:border-th-error:focus-within {
+    border-color: var(--th-error);
+  }
+
+  .xl\:hover\:border-th-background:hover {
+    border-color: var(--th-background);
+  }
+
+  .xl\:hover\:border-th-text:hover {
+    border-color: var(--th-text);
+  }
+
+  .xl\:hover\:border-th-linkText:hover {
+    border-color: var(--th-linkText);
+  }
+
+  .xl\:hover\:border-th-linkTextSecondary:hover {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:hover\:border-th-popUp:hover {
+    border-color: var(--th-popUp);
+  }
+
+  .xl\:hover\:border-th-error:hover {
+    border-color: var(--th-error);
+  }
+
+  .xl\:focus\:border-th-background:focus {
+    border-color: var(--th-background);
+  }
+
+  .xl\:focus\:border-th-text:focus {
+    border-color: var(--th-text);
+  }
+
+  .xl\:focus\:border-th-linkText:focus {
+    border-color: var(--th-linkText);
+  }
+
+  .xl\:focus\:border-th-linkTextSecondary:focus {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:border-th-popUp:focus {
+    border-color: var(--th-popUp);
+  }
+
+  .xl\:focus\:border-th-error:focus {
+    border-color: var(--th-error);
   }
 
   .xl\:border-opacity-0 {
@@ -72650,12 +75765,52 @@ video {
     padding-left: 0.875rem;
   }
 
-  .xl\:placeholder-background::placeholder {
-    color: var(--backgroundColor);
+  .xl\:placeholder-th-background::placeholder {
+    color: var(--th-background);
   }
 
-  .xl\:focus\:placeholder-background:focus::placeholder {
-    color: var(--backgroundColor);
+  .xl\:placeholder-th-text::placeholder {
+    color: var(--th-text);
+  }
+
+  .xl\:placeholder-th-linkText::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .xl\:placeholder-th-linkTextSecondary::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:placeholder-th-popUp::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .xl\:placeholder-th-error::placeholder {
+    color: var(--th-error);
+  }
+
+  .xl\:focus\:placeholder-th-background:focus::placeholder {
+    color: var(--th-background);
+  }
+
+  .xl\:focus\:placeholder-th-text:focus::placeholder {
+    color: var(--th-text);
+  }
+
+  .xl\:focus\:placeholder-th-linkText:focus::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .xl\:focus\:placeholder-th-linkTextSecondary:focus::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:placeholder-th-popUp:focus::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .xl\:focus\:placeholder-th-error:focus::placeholder {
+    color: var(--th-error);
   }
 
   .xl\:placeholder-opacity-0::placeholder {
@@ -75947,16 +79102,76 @@ video {
     --tw-ring-inset: inset;
   }
 
-  .xl\:ring-offset-background {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .xl\:ring-offset-th-background {
+    --tw-ring-offset-color: var(--th-background);
   }
 
-  .xl\:focus-within\:ring-offset-background:focus-within {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .xl\:ring-offset-th-text {
+    --tw-ring-offset-color: var(--th-text);
   }
 
-  .xl\:focus\:ring-offset-background:focus {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .xl\:ring-offset-th-linkText {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .xl\:ring-offset-th-linkTextSecondary {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:ring-offset-th-popUp {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .xl\:ring-offset-th-error {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .xl\:focus-within\:ring-offset-th-background:focus-within {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .xl\:focus-within\:ring-offset-th-text:focus-within {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .xl\:focus-within\:ring-offset-th-linkText:focus-within {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .xl\:focus-within\:ring-offset-th-linkTextSecondary:focus-within {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus-within\:ring-offset-th-popUp:focus-within {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .xl\:focus-within\:ring-offset-th-error:focus-within {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .xl\:focus\:ring-offset-th-background:focus {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .xl\:focus\:ring-offset-th-text:focus {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .xl\:focus\:ring-offset-th-linkText:focus {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .xl\:focus\:ring-offset-th-linkTextSecondary:focus {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:ring-offset-th-popUp:focus {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .xl\:focus\:ring-offset-th-error:focus {
+    --tw-ring-offset-color: var(--th-error);
   }
 
   .xl\:ring-offset-0 {
@@ -76019,16 +79234,76 @@ video {
     --tw-ring-offset-width: 8px;
   }
 
-  .xl\:ring-background {
-    --tw-ring-color: var(--backgroundColor);
+  .xl\:ring-th-background {
+    --tw-ring-color: var(--th-background);
   }
 
-  .xl\:focus-within\:ring-background:focus-within {
-    --tw-ring-color: var(--backgroundColor);
+  .xl\:ring-th-text {
+    --tw-ring-color: var(--th-text);
   }
 
-  .xl\:focus\:ring-background:focus {
-    --tw-ring-color: var(--backgroundColor);
+  .xl\:ring-th-linkText {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .xl\:ring-th-linkTextSecondary {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:ring-th-popUp {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .xl\:ring-th-error {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .xl\:focus-within\:ring-th-background:focus-within {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .xl\:focus-within\:ring-th-text:focus-within {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .xl\:focus-within\:ring-th-linkText:focus-within {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .xl\:focus-within\:ring-th-linkTextSecondary:focus-within {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus-within\:ring-th-popUp:focus-within {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .xl\:focus-within\:ring-th-error:focus-within {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .xl\:focus\:ring-th-background:focus {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .xl\:focus\:ring-th-text:focus {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .xl\:focus\:ring-th-linkText:focus {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .xl\:focus\:ring-th-linkTextSecondary:focus {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:ring-th-popUp:focus {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .xl\:focus\:ring-th-error:focus {
+    --tw-ring-color: var(--th-error);
   }
 
   .xl\:ring-opacity-0 {
@@ -76255,24 +79530,124 @@ video {
     text-align: justify;
   }
 
-  .xl\:text-background {
-    color: var(--backgroundColor);
+  .xl\:text-th-background {
+    color: var(--th-background);
   }
 
-  .group:hover .xl\:group-hover\:text-background {
-    color: var(--backgroundColor);
+  .xl\:text-th-text {
+    color: var(--th-text);
   }
 
-  .xl\:focus-within\:text-background:focus-within {
-    color: var(--backgroundColor);
+  .xl\:text-th-linkText {
+    color: var(--th-linkText);
   }
 
-  .xl\:hover\:text-background:hover {
-    color: var(--backgroundColor);
+  .xl\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
   }
 
-  .xl\:focus\:text-background:focus {
-    color: var(--backgroundColor);
+  .xl\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .xl\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .group:hover .xl\:group-hover\:text-th-background {
+    color: var(--th-background);
+  }
+
+  .group:hover .xl\:group-hover\:text-th-text {
+    color: var(--th-text);
+  }
+
+  .group:hover .xl\:group-hover\:text-th-linkText {
+    color: var(--th-linkText);
+  }
+
+  .group:hover .xl\:group-hover\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .xl\:group-hover\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .group:hover .xl\:group-hover\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .xl\:focus-within\:text-th-background:focus-within {
+    color: var(--th-background);
+  }
+
+  .xl\:focus-within\:text-th-text:focus-within {
+    color: var(--th-text);
+  }
+
+  .xl\:focus-within\:text-th-linkText:focus-within {
+    color: var(--th-linkText);
+  }
+
+  .xl\:focus-within\:text-th-linkTextSecondary:focus-within {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus-within\:text-th-popUp:focus-within {
+    color: var(--th-popUp);
+  }
+
+  .xl\:focus-within\:text-th-error:focus-within {
+    color: var(--th-error);
+  }
+
+  .xl\:hover\:text-th-background:hover {
+    color: var(--th-background);
+  }
+
+  .xl\:hover\:text-th-text:hover {
+    color: var(--th-text);
+  }
+
+  .xl\:hover\:text-th-linkText:hover {
+    color: var(--th-linkText);
+  }
+
+  .xl\:hover\:text-th-linkTextSecondary:hover {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:hover\:text-th-popUp:hover {
+    color: var(--th-popUp);
+  }
+
+  .xl\:hover\:text-th-error:hover {
+    color: var(--th-error);
+  }
+
+  .xl\:focus\:text-th-background:focus {
+    color: var(--th-background);
+  }
+
+  .xl\:focus\:text-th-text:focus {
+    color: var(--th-text);
+  }
+
+  .xl\:focus\:text-th-linkText:focus {
+    color: var(--th-linkText);
+  }
+
+  .xl\:focus\:text-th-linkTextSecondary:focus {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .xl\:focus\:text-th-popUp:focus {
+    color: var(--th-popUp);
+  }
+
+  .xl\:focus\:text-th-error:focus {
+    color: var(--th-error);
   }
 
   .xl\:text-opacity-0 {
@@ -82579,8 +85954,28 @@ video {
     --tw-divide-x-reverse: 1;
   }
 
-  .\32xl\:divide-background > :not([hidden]) ~ :not([hidden]) {
-    border-color: var(--backgroundColor);
+  .\32xl\:divide-th-background > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-background);
+  }
+
+  .\32xl\:divide-th-text > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-text);
+  }
+
+  .\32xl\:divide-th-linkText > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkText);
+  }
+
+  .\32xl\:divide-th-linkTextSecondary > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:divide-th-popUp > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-popUp);
+  }
+
+  .\32xl\:divide-th-error > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--th-error);
   }
 
   .\32xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -82766,24 +86161,124 @@ video {
             background-clip: text;
   }
 
-  .\32xl\:bg-background {
-    background-color: var(--backgroundColor);
+  .\32xl\:bg-th-background {
+    background-color: var(--th-background);
   }
 
-  .group:hover .\32xl\:group-hover\:bg-background {
-    background-color: var(--backgroundColor);
+  .\32xl\:bg-th-text {
+    background-color: var(--th-text);
   }
 
-  .\32xl\:focus-within\:bg-background:focus-within {
-    background-color: var(--backgroundColor);
+  .\32xl\:bg-th-linkText {
+    background-color: var(--th-linkText);
   }
 
-  .\32xl\:hover\:bg-background:hover {
-    background-color: var(--backgroundColor);
+  .\32xl\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
   }
 
-  .\32xl\:focus\:bg-background:focus {
-    background-color: var(--backgroundColor);
+  .\32xl\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .\32xl\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-th-background {
+    background-color: var(--th-background);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-th-text {
+    background-color: var(--th-text);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-th-linkText {
+    background-color: var(--th-linkText);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-th-linkTextSecondary {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-th-popUp {
+    background-color: var(--th-popUp);
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-th-error {
+    background-color: var(--th-error);
+  }
+
+  .\32xl\:focus-within\:bg-th-background:focus-within {
+    background-color: var(--th-background);
+  }
+
+  .\32xl\:focus-within\:bg-th-text:focus-within {
+    background-color: var(--th-text);
+  }
+
+  .\32xl\:focus-within\:bg-th-linkText:focus-within {
+    background-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus-within\:bg-th-linkTextSecondary:focus-within {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus-within\:bg-th-popUp:focus-within {
+    background-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus-within\:bg-th-error:focus-within {
+    background-color: var(--th-error);
+  }
+
+  .\32xl\:hover\:bg-th-background:hover {
+    background-color: var(--th-background);
+  }
+
+  .\32xl\:hover\:bg-th-text:hover {
+    background-color: var(--th-text);
+  }
+
+  .\32xl\:hover\:bg-th-linkText:hover {
+    background-color: var(--th-linkText);
+  }
+
+  .\32xl\:hover\:bg-th-linkTextSecondary:hover {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:hover\:bg-th-popUp:hover {
+    background-color: var(--th-popUp);
+  }
+
+  .\32xl\:hover\:bg-th-error:hover {
+    background-color: var(--th-error);
+  }
+
+  .\32xl\:focus\:bg-th-background:focus {
+    background-color: var(--th-background);
+  }
+
+  .\32xl\:focus\:bg-th-text:focus {
+    background-color: var(--th-text);
+  }
+
+  .\32xl\:focus\:bg-th-linkText:focus {
+    background-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:bg-th-linkTextSecondary:focus {
+    background-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:bg-th-popUp:focus {
+    background-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:bg-th-error:focus {
+    background-color: var(--th-error);
   }
 
   .\32xl\:bg-none {
@@ -82822,43 +86317,238 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .\32xl\:from-background {
-    --tw-gradient-from: var(--backgroundColor);
+  .\32xl\:from-th-background {
+    --tw-gradient-from: var(--th-background);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .\32xl\:via-background {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .\32xl\:to-background {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .\32xl\:hover\:from-background:hover {
-    --tw-gradient-from: var(--backgroundColor);
+  .\32xl\:from-th-text {
+    --tw-gradient-from: var(--th-text);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .\32xl\:hover\:via-background:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
-  }
-
-  .\32xl\:hover\:to-background:hover {
-    --tw-gradient-to: var(--backgroundColor);
-  }
-
-  .\32xl\:focus\:from-background:focus {
-    --tw-gradient-from: var(--backgroundColor);
+  .\32xl\:from-th-linkText {
+    --tw-gradient-from: var(--th-linkText);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .\32xl\:focus\:via-background:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), var(--backgroundColor), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:from-th-linkTextSecondary {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
   }
 
-  .\32xl\:focus\:to-background:focus {
-    --tw-gradient-to: var(--backgroundColor);
+  .\32xl\:from-th-popUp {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:from-th-error {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-th-background {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-th-text {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-th-linkText {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-th-linkTextSecondary {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-th-popUp {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:via-th-error {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:to-th-background {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .\32xl\:to-th-text {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .\32xl\:to-th-linkText {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .\32xl\:to-th-linkTextSecondary {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:to-th-popUp {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .\32xl\:to-th-error {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .\32xl\:hover\:from-th-background:hover {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-th-text:hover {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-th-linkText:hover {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-th-linkTextSecondary:hover {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-th-popUp:hover {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:from-th-error:hover {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-th-background:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-th-text:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-th-linkText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-th-linkTextSecondary:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-th-popUp:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:via-th-error:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:hover\:to-th-background:hover {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .\32xl\:hover\:to-th-text:hover {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .\32xl\:hover\:to-th-linkText:hover {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .\32xl\:hover\:to-th-linkTextSecondary:hover {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:hover\:to-th-popUp:hover {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .\32xl\:hover\:to-th-error:hover {
+    --tw-gradient-to: var(--th-error);
+  }
+
+  .\32xl\:focus\:from-th-background:focus {
+    --tw-gradient-from: var(--th-background);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-th-text:focus {
+    --tw-gradient-from: var(--th-text);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-th-linkText:focus {
+    --tw-gradient-from: var(--th-linkText);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-th-linkTextSecondary:focus {
+    --tw-gradient-from: var(--th-linkTextSecondary);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-th-popUp:focus {
+    --tw-gradient-from: var(--th-popUp);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:from-th-error:focus {
+    --tw-gradient-from: var(--th-error);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-th-background:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-background), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-th-text:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-text), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-th-linkText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkText), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-th-linkTextSecondary:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-linkTextSecondary), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-th-popUp:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-popUp), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:via-th-error:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), var(--th-error), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  }
+
+  .\32xl\:focus\:to-th-background:focus {
+    --tw-gradient-to: var(--th-background);
+  }
+
+  .\32xl\:focus\:to-th-text:focus {
+    --tw-gradient-to: var(--th-text);
+  }
+
+  .\32xl\:focus\:to-th-linkText:focus {
+    --tw-gradient-to: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:to-th-linkTextSecondary:focus {
+    --tw-gradient-to: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:to-th-popUp:focus {
+    --tw-gradient-to: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:to-th-error:focus {
+    --tw-gradient-to: var(--th-error);
   }
 
   .\32xl\:bg-opacity-0 {
@@ -83241,24 +86931,124 @@ video {
     border-collapse: separate;
   }
 
-  .\32xl\:border-background {
-    border-color: var(--backgroundColor);
+  .\32xl\:border-th-background {
+    border-color: var(--th-background);
   }
 
-  .group:hover .\32xl\:group-hover\:border-background {
-    border-color: var(--backgroundColor);
+  .\32xl\:border-th-text {
+    border-color: var(--th-text);
   }
 
-  .\32xl\:focus-within\:border-background:focus-within {
-    border-color: var(--backgroundColor);
+  .\32xl\:border-th-linkText {
+    border-color: var(--th-linkText);
   }
 
-  .\32xl\:hover\:border-background:hover {
-    border-color: var(--backgroundColor);
+  .\32xl\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
   }
 
-  .\32xl\:focus\:border-background:focus {
-    border-color: var(--backgroundColor);
+  .\32xl\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .\32xl\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-th-background {
+    border-color: var(--th-background);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-th-text {
+    border-color: var(--th-text);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-th-linkText {
+    border-color: var(--th-linkText);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-th-linkTextSecondary {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-th-popUp {
+    border-color: var(--th-popUp);
+  }
+
+  .group:hover .\32xl\:group-hover\:border-th-error {
+    border-color: var(--th-error);
+  }
+
+  .\32xl\:focus-within\:border-th-background:focus-within {
+    border-color: var(--th-background);
+  }
+
+  .\32xl\:focus-within\:border-th-text:focus-within {
+    border-color: var(--th-text);
+  }
+
+  .\32xl\:focus-within\:border-th-linkText:focus-within {
+    border-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus-within\:border-th-linkTextSecondary:focus-within {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus-within\:border-th-popUp:focus-within {
+    border-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus-within\:border-th-error:focus-within {
+    border-color: var(--th-error);
+  }
+
+  .\32xl\:hover\:border-th-background:hover {
+    border-color: var(--th-background);
+  }
+
+  .\32xl\:hover\:border-th-text:hover {
+    border-color: var(--th-text);
+  }
+
+  .\32xl\:hover\:border-th-linkText:hover {
+    border-color: var(--th-linkText);
+  }
+
+  .\32xl\:hover\:border-th-linkTextSecondary:hover {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:hover\:border-th-popUp:hover {
+    border-color: var(--th-popUp);
+  }
+
+  .\32xl\:hover\:border-th-error:hover {
+    border-color: var(--th-error);
+  }
+
+  .\32xl\:focus\:border-th-background:focus {
+    border-color: var(--th-background);
+  }
+
+  .\32xl\:focus\:border-th-text:focus {
+    border-color: var(--th-text);
+  }
+
+  .\32xl\:focus\:border-th-linkText:focus {
+    border-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:border-th-linkTextSecondary:focus {
+    border-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:border-th-popUp:focus {
+    border-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:border-th-error:focus {
+    border-color: var(--th-error);
   }
 
   .\32xl\:border-opacity-0 {
@@ -88841,12 +92631,52 @@ video {
     padding-left: 0.875rem;
   }
 
-  .\32xl\:placeholder-background::placeholder {
-    color: var(--backgroundColor);
+  .\32xl\:placeholder-th-background::placeholder {
+    color: var(--th-background);
   }
 
-  .\32xl\:focus\:placeholder-background:focus::placeholder {
-    color: var(--backgroundColor);
+  .\32xl\:placeholder-th-text::placeholder {
+    color: var(--th-text);
+  }
+
+  .\32xl\:placeholder-th-linkText::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .\32xl\:placeholder-th-linkTextSecondary::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:placeholder-th-popUp::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .\32xl\:placeholder-th-error::placeholder {
+    color: var(--th-error);
+  }
+
+  .\32xl\:focus\:placeholder-th-background:focus::placeholder {
+    color: var(--th-background);
+  }
+
+  .\32xl\:focus\:placeholder-th-text:focus::placeholder {
+    color: var(--th-text);
+  }
+
+  .\32xl\:focus\:placeholder-th-linkText:focus::placeholder {
+    color: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:placeholder-th-linkTextSecondary:focus::placeholder {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:placeholder-th-popUp:focus::placeholder {
+    color: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:placeholder-th-error:focus::placeholder {
+    color: var(--th-error);
   }
 
   .\32xl\:placeholder-opacity-0::placeholder {
@@ -92138,16 +95968,76 @@ video {
     --tw-ring-inset: inset;
   }
 
-  .\32xl\:ring-offset-background {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .\32xl\:ring-offset-th-background {
+    --tw-ring-offset-color: var(--th-background);
   }
 
-  .\32xl\:focus-within\:ring-offset-background:focus-within {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .\32xl\:ring-offset-th-text {
+    --tw-ring-offset-color: var(--th-text);
   }
 
-  .\32xl\:focus\:ring-offset-background:focus {
-    --tw-ring-offset-color: var(--backgroundColor);
+  .\32xl\:ring-offset-th-linkText {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .\32xl\:ring-offset-th-linkTextSecondary {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:ring-offset-th-popUp {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .\32xl\:ring-offset-th-error {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .\32xl\:focus-within\:ring-offset-th-background:focus-within {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .\32xl\:focus-within\:ring-offset-th-text:focus-within {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .\32xl\:focus-within\:ring-offset-th-linkText:focus-within {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus-within\:ring-offset-th-linkTextSecondary:focus-within {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus-within\:ring-offset-th-popUp:focus-within {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus-within\:ring-offset-th-error:focus-within {
+    --tw-ring-offset-color: var(--th-error);
+  }
+
+  .\32xl\:focus\:ring-offset-th-background:focus {
+    --tw-ring-offset-color: var(--th-background);
+  }
+
+  .\32xl\:focus\:ring-offset-th-text:focus {
+    --tw-ring-offset-color: var(--th-text);
+  }
+
+  .\32xl\:focus\:ring-offset-th-linkText:focus {
+    --tw-ring-offset-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:ring-offset-th-linkTextSecondary:focus {
+    --tw-ring-offset-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:ring-offset-th-popUp:focus {
+    --tw-ring-offset-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:ring-offset-th-error:focus {
+    --tw-ring-offset-color: var(--th-error);
   }
 
   .\32xl\:ring-offset-0 {
@@ -92210,16 +96100,76 @@ video {
     --tw-ring-offset-width: 8px;
   }
 
-  .\32xl\:ring-background {
-    --tw-ring-color: var(--backgroundColor);
+  .\32xl\:ring-th-background {
+    --tw-ring-color: var(--th-background);
   }
 
-  .\32xl\:focus-within\:ring-background:focus-within {
-    --tw-ring-color: var(--backgroundColor);
+  .\32xl\:ring-th-text {
+    --tw-ring-color: var(--th-text);
   }
 
-  .\32xl\:focus\:ring-background:focus {
-    --tw-ring-color: var(--backgroundColor);
+  .\32xl\:ring-th-linkText {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .\32xl\:ring-th-linkTextSecondary {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:ring-th-popUp {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .\32xl\:ring-th-error {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .\32xl\:focus-within\:ring-th-background:focus-within {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .\32xl\:focus-within\:ring-th-text:focus-within {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .\32xl\:focus-within\:ring-th-linkText:focus-within {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus-within\:ring-th-linkTextSecondary:focus-within {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus-within\:ring-th-popUp:focus-within {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus-within\:ring-th-error:focus-within {
+    --tw-ring-color: var(--th-error);
+  }
+
+  .\32xl\:focus\:ring-th-background:focus {
+    --tw-ring-color: var(--th-background);
+  }
+
+  .\32xl\:focus\:ring-th-text:focus {
+    --tw-ring-color: var(--th-text);
+  }
+
+  .\32xl\:focus\:ring-th-linkText:focus {
+    --tw-ring-color: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:ring-th-linkTextSecondary:focus {
+    --tw-ring-color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:ring-th-popUp:focus {
+    --tw-ring-color: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:ring-th-error:focus {
+    --tw-ring-color: var(--th-error);
   }
 
   .\32xl\:ring-opacity-0 {
@@ -92446,24 +96396,124 @@ video {
     text-align: justify;
   }
 
-  .\32xl\:text-background {
-    color: var(--backgroundColor);
+  .\32xl\:text-th-background {
+    color: var(--th-background);
   }
 
-  .group:hover .\32xl\:group-hover\:text-background {
-    color: var(--backgroundColor);
+  .\32xl\:text-th-text {
+    color: var(--th-text);
   }
 
-  .\32xl\:focus-within\:text-background:focus-within {
-    color: var(--backgroundColor);
+  .\32xl\:text-th-linkText {
+    color: var(--th-linkText);
   }
 
-  .\32xl\:hover\:text-background:hover {
-    color: var(--backgroundColor);
+  .\32xl\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
   }
 
-  .\32xl\:focus\:text-background:focus {
-    color: var(--backgroundColor);
+  .\32xl\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .\32xl\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-th-background {
+    color: var(--th-background);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-th-text {
+    color: var(--th-text);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-th-linkText {
+    color: var(--th-linkText);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-th-linkTextSecondary {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-th-popUp {
+    color: var(--th-popUp);
+  }
+
+  .group:hover .\32xl\:group-hover\:text-th-error {
+    color: var(--th-error);
+  }
+
+  .\32xl\:focus-within\:text-th-background:focus-within {
+    color: var(--th-background);
+  }
+
+  .\32xl\:focus-within\:text-th-text:focus-within {
+    color: var(--th-text);
+  }
+
+  .\32xl\:focus-within\:text-th-linkText:focus-within {
+    color: var(--th-linkText);
+  }
+
+  .\32xl\:focus-within\:text-th-linkTextSecondary:focus-within {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus-within\:text-th-popUp:focus-within {
+    color: var(--th-popUp);
+  }
+
+  .\32xl\:focus-within\:text-th-error:focus-within {
+    color: var(--th-error);
+  }
+
+  .\32xl\:hover\:text-th-background:hover {
+    color: var(--th-background);
+  }
+
+  .\32xl\:hover\:text-th-text:hover {
+    color: var(--th-text);
+  }
+
+  .\32xl\:hover\:text-th-linkText:hover {
+    color: var(--th-linkText);
+  }
+
+  .\32xl\:hover\:text-th-linkTextSecondary:hover {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:hover\:text-th-popUp:hover {
+    color: var(--th-popUp);
+  }
+
+  .\32xl\:hover\:text-th-error:hover {
+    color: var(--th-error);
+  }
+
+  .\32xl\:focus\:text-th-background:focus {
+    color: var(--th-background);
+  }
+
+  .\32xl\:focus\:text-th-text:focus {
+    color: var(--th-text);
+  }
+
+  .\32xl\:focus\:text-th-linkText:focus {
+    color: var(--th-linkText);
+  }
+
+  .\32xl\:focus\:text-th-linkTextSecondary:focus {
+    color: var(--th-linkTextSecondary);
+  }
+
+  .\32xl\:focus\:text-th-popUp:focus {
+    color: var(--th-popUp);
+  }
+
+  .\32xl\:focus\:text-th-error:focus {
+    color: var(--th-error);
   }
 
   .\32xl\:text-opacity-0 {
